@@ -1,0 +1,16 @@
+<header>
+    <div class="inner-header">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/vectors/default-monochrome-white.svg" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                {% for item in site.data.navigation %}
+                <li><a href="{{item.link}}">{{item.name}}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>
