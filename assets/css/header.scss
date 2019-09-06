@@ -1,0 +1,52 @@
+---
+---
+@import "colors";
+@import url('https://fonts.googleapis.com/css?family=Istok+Web&display=swap');
+
+header {
+    background-image: $gradient;
+    font-family: 'Istok Web';
+
+    .inner-header {
+        max-width: 65%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .logo img {
+            width: 300px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+    
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                padding: 10px;
+    
+                li {
+                    margin: 0px 5px;
+                    color: $white;
+                    border-radius: 5px;
+
+                    padding: 10px;
+    
+                    :hover {
+                        //background-color: rgba(204, 204, 204, 0.4);
+                        border-bottom: 2px solid white;
+                    }
+    
+                    a {
+                        color: inherit;
+                        :visited {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

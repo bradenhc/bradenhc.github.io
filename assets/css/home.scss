@@ -1,0 +1,21 @@
+---
+---
+@import "colors";
+
+header {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .banner {
+        height: 100vh;
+        background-image: $gradient;
+    }
+
+}

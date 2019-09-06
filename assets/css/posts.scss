@@ -1,0 +1,13 @@
+---
+---
+@import "fonts";
+
+main.post-container {
+    margin: auto;
+    width: 100%;
+    max-width: 728px;
+    padding: 0px 30px;
+
+    @include reader-font-set;
+
+}

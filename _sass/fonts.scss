@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@mixin reader-font-set {
+    font-family: 'Georgia';
+
+    line-height: 1.5em;
+    font-size: 1.1rem;
+
+    p {
+        margin-block-start: 1.5em;
+        margin-block-end: 1.5em;
+    }
+
+    pre {
+        margin: 1.5em 0em;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans';
+    }
+}
