@@ -3,78 +3,23 @@
 @import "colors";
 @import "fonts";
 @import "breakpoints";
+@import "header";
 
-header {
-    background-color: $cWhite;
-    width: 100%;
-    font-family: $fLogo;
+@include header(
+    (
+        "primary": (
+            "color": $cWhite
+        ),
+        "secondary": (
+            "gradient": $cGradient
+        )
+    ),
+    (
+        "primary": $cBlueDark,
+        "secondary": $cWhite
+    )
+);
 
-    .navbar {
-        -webkit-transition: all ease-out .5s;
-        -moz-transition: all ease-out .5s;
-        -o-transition: all ease-out .5s;
-        transition: all ease-out .5s;
-
-        &.active {
-            background-image: $cGradient;
-            * {
-                color: $cWhite;
-            }
-
-            .logo svg * {
-                fill: $cWhite;
-            }
-
-            .navbar-collapse {
-                background-image: $cGradient;
-            }
-        }
-
-
-
-        li {
-            text-align: right;
-        }
-    }
-
-     * {
-        color: $cBlueDark;
-     }
-
-     .navbar-collapse {
-         background-color: $cWhite;
-     }
-
-     
-
-    .logo svg {
-        width: 150px;
-
-        @include media-breakpoint-up(md) {
-            width: 300px;
-        }
-
-        * {
-            fill: $cBlueDark;
-        }
-    }
-
-    .navbar-toggler-icon {
-        fill: $cBlueDark;
-    }
-
-    @include media-breakpoint-up(md) {
-        li a {
-            border-top: 2px solid $cWhite;
-            border-bottom: 2px solid $cWhite;
-        }
-        li a:hover {
-            color: inherit;
-            border-bottom: 2px solid $cBlueDark;
-        }
-    }
-
-}
 
 .container-home {
     margin-top: 65px;

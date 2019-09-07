@@ -1,0 +1,109 @@
+@import "fonts";
+@import "breakpoints";
+
+
+@mixin set-background($backgroundMap) {
+    @if map-has-key($backgroundMap, "color") {
+        background-image: none;
+        background-color: map-get($backgroundMap, "color");
+    } @else {
+        background-color: transparent;
+        background-image: map-get($backgroundMap, "gradient");
+    }
+}
+
+@mixin set-color-and-fill($fontColor) {
+    * {
+        color: $fontColor;
+    }
+
+    svg * {
+        fill: $fontColor;
+    }
+}
+
+
+// $background is a map that takes the following form:
+//
+//  ( 
+//      primary: (
+//          color: $color,
+//          gradient: $gradient
+//      ),
+//      secondary: (
+//          color: $color,
+//          gradient: $gradient,
+//      )
+//  )
+//
+// $font is a map that takes the following form:
+//  (
+//      primary: $color,
+//      secondary: $color
+//  )
+// 
+// 
+//
+@mixin header($background, $font) {
+
+    $backgroundPrimary: map-get($background, "primary");
+    $backgroundSecondary: map-get($background, "secondary");
+    $fontPrimary: map-get($font, "primary");
+    $fontSecondary: map-get($font, "secondary");
+
+    header {
+        width: 100%;
+
+        * {
+            font-family: $fLogo;
+        }
+
+        .navbar {
+
+            @include set-background($backgroundPrimary);
+            @include set-color-and-fill($fontPrimary);
+
+            &.active {
+                @include set-background($backgroundSecondary);
+                @include set-color-and-fill($fontSecondary);
+
+                box-shadow: 1px 1px 2px black;
+
+                .navbar-collapse {
+                    @include set-background($backgroundSecondary);
+                }
+            }
+
+            .navbar-collapse {
+                @include set-background($backgroundPrimary);
+            }
+
+            li {
+                text-align: right;
+            }
+        }
+
+        .logo svg {
+            width: 150px;
+
+            @include media-breakpoint-up(md) {
+                width: 220px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                width: 300px;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            li a {
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+            }
+            li a:hover {
+                color: inherit;
+                border-bottom: 2px solid $fontPrimary;
+            }
+        }
+    }
+}
