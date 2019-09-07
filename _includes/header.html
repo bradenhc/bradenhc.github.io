@@ -8,11 +8,17 @@
             <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto align-items-center">
                 {% for item in site.data.navigation %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ item.link }}">{{item.name}}</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ item.link }}">
+                        {% if item.icon %}
+                            <i class="{{ item.class }}"></i>
+                        {% else %}
+                            {{item.name}}
+                        {% endif %}
+                    </a>
+                </li>
                 {% endfor %}
             </ul>
         </div>
