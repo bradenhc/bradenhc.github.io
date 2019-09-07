@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:200&display=swap');
 
 @mixin reader-font-set {
     font-family: 'Georgia';
@@ -19,3 +21,6 @@
         font-family: 'Open Sans';
     }
 }
+
+$themeFont: 'Istok Web';
+$fLogo: 'Istok Web';

@@ -1,52 +1,82 @@
 ---
 ---
 @import "colors";
-@import url('https://fonts.googleapis.com/css?family=Istok+Web&display=swap');
+@import "fonts";
+@import "breakpoints";
 
 header {
-    background-image: $gradient;
-    font-family: 'Istok Web';
+    width: 100%;
+    * {
 
-    .inner-header {
-        max-width: 65%;
-        margin: auto;
-        display: flex;
-        align-items: center;
+        font-family: $fLogo;
+        color: $cWhite;
+     }
 
-        .logo img {
-            width: 300px;
-        }
+    .navbar {
+        background-image: $cGradient;
+        background-color: $cWhite;
+        -webkit-transition: all ease-out .5s;
+        -moz-transition: all ease-out .5s;
+        -o-transition: all ease-out .5s;
+        transition: all ease-out .5s;
 
-        nav {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-    
-            ul {
-                display: flex;
-                align-items: center;
-                list-style: none;
-                padding: 10px;
-    
-                li {
-                    margin: 0px 5px;
-                    color: $white;
-                    border-radius: 5px;
+        &.active {
+            background-image: none;
+            background-color: $cWhite;
+            box-shadow: 1px 1px 2px $cBlueDark;
 
-                    padding: 10px;
-    
-                    :hover {
-                        //background-color: rgba(204, 204, 204, 0.4);
-                        border-bottom: 2px solid white;
-                    }
-    
-                    a {
-                        color: inherit;
-                        :visited {
-                        }
-                    }
-                }
+            * {
+                color: $cBlueDark;
+            }
+
+            .logo svg * {
+                fill: $cBlueDark;
+            }
+
+            .navbar-collapse {
+                background-image: none;
+                background-color: $cWhite;
             }
         }
+
+
+
+        li {
+            text-align: right;
+        }
     }
+
+     .navbar-collapse {
+         background-image: $cGradient;
+     }
+
+     
+
+    .logo svg {
+        width: 150px;
+
+        @include media-breakpoint-up(md) {
+            width: 200px;
+        }
+
+        * {
+            fill: $cWhite;
+        }
+    }
+
+    .navbar-toggler-icon {
+        fill: $cWhite;
+    }
+
+    @include media-breakpoint-up(md) {
+        li a {
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+        }
+        li a:hover {
+            color: inherit;
+            border-bottom: 2px solid $cWhite;
+        }
+    }
+
 }

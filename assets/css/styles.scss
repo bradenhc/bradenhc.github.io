@@ -1,7 +1,7 @@
 ---
 ---
 
-@mixin fill {
+@mixin reset {
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -9,12 +9,12 @@
 }
 
 html {
-    @include fill;
+    @include reset;
     body {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        @include fill;
+        @include reset;
 
         main {
             flex-grow: 1;
@@ -24,4 +24,8 @@ html {
 
 a {
     text-decoration: none;
+}
+
+.container-main {
+    margin-top: 65px;
 }

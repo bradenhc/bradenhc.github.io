@@ -1,21 +1,118 @@
 ---
 ---
 @import "colors";
+@import "fonts";
+@import "breakpoints";
 
 header {
-    background: transparent;
-    position: fixed;
+    background-color: $cWhite;
+    width: 100%;
+    font-family: $fLogo;
+
+    .navbar {
+        -webkit-transition: all ease-out .5s;
+        -moz-transition: all ease-out .5s;
+        -o-transition: all ease-out .5s;
+        transition: all ease-out .5s;
+
+        &.active {
+            background-image: $cGradient;
+            * {
+                color: $cWhite;
+            }
+
+            .logo svg * {
+                fill: $cWhite;
+            }
+
+            .navbar-collapse {
+                background-image: $cGradient;
+            }
+        }
+
+
+
+        li {
+            text-align: right;
+        }
+    }
+
+     * {
+        color: $cBlueDark;
+     }
+
+     .navbar-collapse {
+         background-color: $cWhite;
+     }
+
+     
+
+    .logo svg {
+        width: 150px;
+
+        @include media-breakpoint-up(md) {
+            width: 300px;
+        }
+
+        * {
+            fill: $cBlueDark;
+        }
+    }
+
+    .navbar-toggler-icon {
+        fill: $cBlueDark;
+    }
+
+    @include media-breakpoint-up(md) {
+        li a {
+            border-top: 2px solid $cWhite;
+            border-bottom: 2px solid $cWhite;
+        }
+        li a:hover {
+            color: inherit;
+            border-bottom: 2px solid $cBlueDark;
+        }
+    }
+
+}
+
+.container-home {
+    margin-top: 65px;
+}
+
+.portfolio-image {
     width: 100%;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+.about {
+    font-size: 2.5em;
+    font-weight: 200;
+    font-family: 'Barlow';
+}
 
-    .banner {
-        height: 100vh;
-        background-image: $gradient;
+.slogan-container {
+    z-index: 1000;
+
+    .slogan {
+        color: $cBlueDark;
+        font-family: $themeFont;
+        font-size: 3.5em;
+        font-weight: normal;
+        text-align: center;
+    
+        @include media-breakpoint-up(md) {
+            text-align: left;
+            font-size: 3.5em;
+            margin-top: 40px;
+        }
+    
+        @include media-breakpoint-up(lg) {
+            font-size: 3.0em;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 4.0em;
+        }
+    
     }
-
 }
