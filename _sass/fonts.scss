@@ -18,6 +18,11 @@ $fBody: 'Georgia';
     p {
         margin-block-start: 1.5em;
         margin-block-end: 1.5em;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
     }
 
     pre {
