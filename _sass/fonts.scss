@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barlow:200&display=swap');
 
+$fThemePrimary: 'Istok Web';
+$fThemeSecondary: 'Barlow';
+
+$fHeader: 'Open Sans';
+$fBody: 'Georgia';
+
+
 @mixin reader-font-set {
-    font-family: 'Georgia';
+    font-family: $fBody;
 
     line-height: 1.5em;
     font-size: 1.1rem;
@@ -18,9 +25,6 @@
     }
     
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Open Sans';
+        font-family: $fHeader;
     }
 }
-
-$themeFont: 'Istok Web';
-$fLogo: 'Istok Web';
