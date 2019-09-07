@@ -1,4 +1,14 @@
 - name: Home
   link: /
+  icon: false
 - name: Blog
   link: /blog
+  icon: false
+- name: GitHub
+  link: https://github.com/bradenhc
+  icon: true
+  class: fab fa-github fa-2x
+- name: LinkedIn
+  link: https://linkedin.com/in/bradenhc
+  icon: true
+  class: fab fa-linkedin fa-2x
