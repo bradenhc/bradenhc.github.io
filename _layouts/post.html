@@ -6,4 +6,8 @@ layout: default
     <span>{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
 
     {{ content }}
+
+    <div class="post-footer">
+        <span class="signature">{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
+    </div>
 </main>
