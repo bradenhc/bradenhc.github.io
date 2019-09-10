@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        margin-top: 15px;
 
         a {
             color: inherit;
@@ -25,9 +26,9 @@
         }
 
         .post-date {
-            margin-top: 0.6em;
             font-size: 1.2em;
             font-family: $fHeader;
+            margin-bottom: 0.4em;
         }
     }
 }
