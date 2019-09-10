@@ -4,11 +4,16 @@
 - name: Blog
   link: /blog
   icon: false
+- name: Resume
+  link: /resume/
+  icon: false
 - name: GitHub
   link: https://github.com/bradenhc
   icon: true
   class: fab fa-github fa-2x
+  external: true
 - name: LinkedIn
   link: https://linkedin.com/in/bradenhc
   icon: true
   class: fab fa-linkedin fa-2x
+  external: true

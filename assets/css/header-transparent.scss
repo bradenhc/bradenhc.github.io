@@ -1,0 +1,19 @@
+---
+---
+@import "colors";
+@import "header";
+
+@include header(
+    (
+        "primary": (
+            "color": transparent
+        ),
+        "secondary": (
+            "color": $cWhite
+        )
+    ),
+    (
+        "primary": $cWhite,
+        "secondary": $cBlueDark
+    )
+);
