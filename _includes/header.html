@@ -11,7 +11,11 @@
             <ul class="navbar-nav ml-auto align-items-center">
                 {% for item in site.data.navigation %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ item.link }}">
+                    {% if item.external %}
+                        <a class="nav-link" href="{{ item.link }}" target="_blank" >
+                    {% else %}
+                        <a class="nav-link" href="{{ item.link }}" >
+                    {% endif %}
                         {% if item.icon %}
                             <i class="{{ item.class }}"></i>
                         {% else %}
