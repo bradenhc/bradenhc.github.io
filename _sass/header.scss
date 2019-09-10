@@ -55,7 +55,7 @@
         width: 100%;
 
         * {
-            font-family: $fThemePrimary;
+            font-family: $fTheme;
         }
 
         .navbar {
@@ -83,15 +83,38 @@
             }
         }
 
-        .logo svg {
-            width: 150px;
+        .logo {
 
-            @include media-breakpoint-up(md) {
-                width: 220px;
+            display: flex;
+            align-items: center;
+
+            .logo-title {
+                margin-left: 10px;
+                font-size: 1em;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.2em;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.3em;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.5em;
+                }
             }
 
-            @include media-breakpoint-up(lg) {
-                width: 300px;
+            svg {
+                width: 25px;
+
+                @include media-breakpoint-up(md) {
+                    width: 30px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    width: 35px;
+                }
             }
         }
 
