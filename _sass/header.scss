@@ -72,6 +72,18 @@
                 .navbar-collapse {
                     @include set-background($backgroundSecondary);
                 }
+
+                @include media-breakpoint-up(md) {
+                    li a {
+                        border-top: 2px solid transparent;
+                        border-bottom: 2px solid transparent;
+                    }
+                    li a:hover {
+                        color: inherit;
+                        border-bottom: 2px solid $fontSecondary;
+                    }
+                }
+
             }
 
             .navbar-collapse {
