@@ -1,0 +1,14 @@
+---
+---
+@import "fonts";
+
+.container-main {
+    width: 100%;
+    max-width: 728px;
+
+    @include reader-font-set;
+}
+
+.container-post {
+    margin-top: 80px !important;
+}

@@ -3,23 +3,6 @@
 @import "colors";
 @import "fonts";
 @import "breakpoints";
-@import "header";
-
-@include header(
-    (
-        "primary": (
-            "color": $cWhite
-        ),
-        "secondary": (
-            "gradient": $cGradient
-        )
-    ),
-    (
-        "primary": $cBlueDark,
-        "secondary": $cWhite
-    )
-);
-
 
 .container-home {
     margin-top: 65px;
