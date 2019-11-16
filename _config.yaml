@@ -1,1 +1,12 @@
 collections_dir: collections
+
+collections:
+  redirects:
+    output: true
+    permalink: /:path
+
+defaults:
+  - scope: 
+      type: redirects
+    values:
+      layout: redirect
