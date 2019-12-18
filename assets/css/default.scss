@@ -1,6 +1,8 @@
 ---
 ---
 @import "fonts";
+@import "colors";
+@import "breakpoints";
 
 .posts {
     margin: 10px;
@@ -32,3 +34,62 @@
         }
     }
 }
+
+.container-resources {
+    .welcome-banner {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: $cBlueLight;
+            font-family: $fTheme;
+            font-size: 3.5em;
+            font-weight: normal;
+            text-align: center;
+    
+            @include media-breakpoint-up(md) {
+                font-size: 3.5em;
+            }
+        
+            @include media-breakpoint-up(lg) {
+                font-size: 3.0em;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 4.0em;
+            }
+        }
+
+        svg {
+            width: 200px;
+            margin: 10px 30px 10px 0px;
+        }
+
+    }
+
+    .resources {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+            }
+
+
+
+            &:hover {
+            }
+        }
+    }
+}
+

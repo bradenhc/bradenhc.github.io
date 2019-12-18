@@ -1,6 +1,9 @@
 - name: Home
   link: /
   icon: false
+- name: Learn
+  link: /learn
+  icon: false
 - name: Blog
   link: /blog
   icon: false

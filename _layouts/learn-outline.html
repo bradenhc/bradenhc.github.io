@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<main class="container container-main container-learn-outline">
+    <div class="outline-header">
+        <img src="{{ page.topic_logo_url }}" />
+        <h1>{{ page.topic_display_name }}</h1>
+    </div>
+    <ul class="outline">
+        {% for section in site.learn %}
+            {% if section.topic == page.topic %}
+                {% unless section.url contains "index" %}
+                    <a class="section-link" href="{{section.url}}">
+                        <li class="section">
+                            <img 
+                                class="section-thumbnail"
+                                src="https://img.youtube.com/vi/{{ section.youtube_video_id }}/default.jpg" />
+                            <div class="section-summary">
+                                <h3 class="section-title">{{section.section_title}}</h3>
+                                <p class="section-description">{{section.section_description}}</p>
+                            </div>
+                        </li c>
+                    </a>
+                {% endunless %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</main>

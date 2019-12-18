@@ -1,0 +1,23 @@
+---
+---
+
+.container-learn-content {
+
+    .video-container {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        .video-content {
+            width: 560px;
+            height: 316px;
+        }
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+
+}
