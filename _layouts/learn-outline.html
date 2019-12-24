@@ -17,7 +17,7 @@ layout: default
                                 src="https://img.youtube.com/vi/{{ section.youtube_video_id }}/default.jpg" />
                             <div class="section-summary">
                                 <h3 class="section-title">{{section.section_title}}</h3>
-                                <p class="section-description">{{section.section_description}}</p>
+                                <p class="section-description">{{section.section_description | markdownify }}</p>
                             </div>
                         </li c>
                     </a>

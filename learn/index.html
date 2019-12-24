@@ -12,8 +12,8 @@ header: default
         {% for topic in site.data.learn.topics %}
             <li>
                 <a href="{{topic.url}}">
-                    <h2>{{topic.name}}</h2>
-                    <span>{{topic.subtitle}}</span>
+                    <h2 class="topic-name">{{topic.name}}</h2>
+                    <i class="topic-subtitle">{{topic.subtitle}}</i>
                 </a>
                 <p>{{topic.overview}}</p>
             </li>

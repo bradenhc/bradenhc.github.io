@@ -39,32 +39,39 @@
     .welcome-banner {
         align-self: stretch;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 20px;
+        }
 
         h1 {
             color: $cBlueLight;
             font-family: $fTheme;
-            font-size: 3.5em;
+            font-size: 2.0em;
             font-weight: normal;
             text-align: center;
+            margin-top: 10px;
     
             @include media-breakpoint-up(md) {
-                font-size: 3.5em;
-            }
-        
-            @include media-breakpoint-up(lg) {
-                font-size: 3.0em;
-            }
-
-            @include media-breakpoint-up(xl) {
-                font-size: 4.0em;
+                margin-top: 0px;
+                margin-left: 20px;
+                font-size: 2.7em;
             }
         }
 
         svg {
-            width: 200px;
-            margin: 10px 30px 10px 0px;
+            width: 150px;
+            @include media-breakpoint-up(lg) {
+                width : 200px;
+            }
         }
 
     }
@@ -72,7 +79,8 @@
     .resources {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin: 0px;
+        padding: 0px;
     
         li {
             list-style: none;
@@ -81,8 +89,31 @@
             margin-bottom: 20px;
             padding: 10px;
 
+            border-top: 1px solid #cccccc;
+
+            @include media-breakpoint-up(md) {
+                &:hover {
+                    .topic-name {
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+
             a {
                 text-decoration: none;
+                color: inherit;
+            }
+
+            .topic-name {
+                text-decoration: underline;
+
+                @include media-breakpoint-up(md) {
+                    text-decoration: none;
+                }
+            }
+
+            .topic-subtitle {
+                color: #777777;
             }
 
 
