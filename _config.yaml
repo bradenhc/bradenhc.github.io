@@ -16,3 +16,9 @@ defaults:
       type: redirects
     values:
       layout: redirect
+  - scope:
+      path: resume/index.html
+    values:
+      layout: resume
+      header: transparent
+      title: Braden Hitchcock | Resume
