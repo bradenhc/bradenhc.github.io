@@ -1,12 +1,9 @@
 ---
 ---
-@import "fonts";
+@import "post";
 
 .container-main {
-    width: 100%;
-    max-width: 768px;
-
-    @include reader-font-set;
+    @include reader-styles;
 }
 
 .container-post {

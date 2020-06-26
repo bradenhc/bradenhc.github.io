@@ -4,38 +4,7 @@
 @import "colors";
 @import "breakpoints";
 
-.posts {
-    margin: 10px;
-    padding: 10px;
-    li {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        margin-top: 15px;
-
-        a {
-            color: inherit;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .post-title {
-            font-size: 2.0em;
-            font-family: $fHeader;
-        }
-
-        .post-date {
-            font-size: 1.2em;
-            font-family: $fHeader;
-            margin-bottom: 0.4em;
-        }
-    }
-}
-
-.container-resources {
+.container-learning-resources {
     .welcome-banner {
         align-self: stretch;
         display: flex;

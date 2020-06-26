@@ -2,12 +2,16 @@
 layout: default
 ---
 <main class="container container-main container-post">
-    <h1>{{ page.title }}</h1>
-    <span>{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
+    <div class="row justify-content-md-center">
+        <div class="col-md-10 col-xl-8">
+            <h1>{{ page.title }}</h1>
+            <span>{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
 
-    {{ content }}
+            {{ content }}
 
-    <div class="post-footer">
-        <span class="signature">{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
+            <div class="post-footer">
+                <span class="signature">{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
+            </div>
+        </div>
     </div>
 </main>
