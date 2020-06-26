@@ -6,6 +6,10 @@
     line-height: 1.5em;
     font-size: 1.1rem;
 
+    a {
+        word-break: break-all;
+    }
+
     p {
         margin-block-start: 1.5em;
         margin-block-end: 1.5em;
@@ -34,7 +38,7 @@
     img {
         display: block;
         margin: 0 auto;
-        max-width: 100%;
+        max-width: 95%;
 
         & + em {
             font-size: 0.9em;
