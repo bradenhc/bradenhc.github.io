@@ -6,10 +6,6 @@
     line-height: 1.5em;
     font-size: 1.1rem;
 
-    a {
-        word-break: break-all;
-    }
-
     p {
         margin-block-start: 1.5em;
         margin-block-end: 1.5em;
@@ -23,8 +19,6 @@
     pre {
         margin: 1.5em 0em;
         line-height: 1.4em;
-        overflow-x: scroll;
-        word-wrap: normal;
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -46,6 +40,12 @@
             font-size: 0.9em;
             display: block;
             text-align: center;
+        }
+    }
+
+    li {
+        a {
+            word-break: break-all;
         }
     }
 
