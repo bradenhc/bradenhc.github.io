@@ -1,4 +1,5 @@
 @import "fonts";
+@import "colors";
 
 @mixin reader-styles {
     font-family: $fBody;
@@ -11,9 +12,17 @@
         margin-block-end: 1.5em;
 
         a {
-            color: inherit;
-            text-decoration: underline;
+            color: $cLink !important;
+
+            code.language-plaintext {
+                color: $cLink !important;
+            }
         }
+    }
+
+    code.language-plaintext {
+        color: $cBlueDark;
+        font-size: 90.2%;
     }
 
     pre {
@@ -55,13 +64,53 @@
         }
     }
 
+    table {
+        font-size: 0.9em;
+
+        thead {
+            font-family: $fHeader;
+            font-weight: bold;
+
+            tr {
+                border-bottom: 2px solid $cTableBorder;
+
+                th {
+                    border-right: 1px solid $cTableBorder;
+                    padding: 3px 5px;
+                }
+
+                th:last-child {
+                    border-right: 1px solid transparent;
+                }
+            }
+        }
+
+        tbody {
+            font-family: $fHeader;
+
+            tr {
+                border-bottom: 1px solid $cTableBorder;
+
+                td {
+                    vertical-align: top;
+                    border-right: 1px solid $cTableBorder;
+                    padding: 3px 5px;
+                }
+
+                td:last-child {
+                    border-right: 1px solid transparent;
+                }
+            }
+        }
+    }
+
     /*
      * GitHub style for Pygments syntax highlighter, for use with Jekyll
      * Courtesy of GitHub.com
      */
 
     div.highlight { margin: 10px 0px; }
-    pre.highlight { padding: 0.4em 0.4em; background-color: #f3f3f3; }
+    pre.highlight { padding: 0.4em 0.4em; background-color: $cCodeBackground; }
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #999988; font-style: italic } /* Comment */
     .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

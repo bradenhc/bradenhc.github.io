@@ -12,6 +12,10 @@
         align-items: stretch;
         margin-top: 15px;
 
+        p {
+            font-family: $fBody;
+        }
+
         a {
             color: inherit;
 
