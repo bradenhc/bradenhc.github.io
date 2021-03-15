@@ -63,15 +63,15 @@
             @include set-background($backgroundPrimary);
             @include set-color-and-fill($fontPrimary);
 
+            @include media-breakpoint-up(lg) {
+                padding: 0.5rem 9.0rem;
+            }
+
             &.active {
                 @include set-background($backgroundSecondary);
                 @include set-color-and-fill($fontSecondary);
 
                 box-shadow: 1px 1px 2px black;
-
-                .navbar-collapse {
-                    @include set-background($backgroundSecondary);
-                }
 
                 @include media-breakpoint-up(md) {
                     li a {
@@ -86,10 +86,6 @@
 
             }
 
-            .navbar-collapse {
-                @include set-background($backgroundPrimary);
-            }
-
             li {
                 text-align: right;
             }
@@ -100,32 +96,11 @@
             display: flex;
             align-items: center;
 
-            .logo-title {
-                margin-left: 10px;
-                font-size: 1em;
-
-                @include media-breakpoint-up(md) {
-                    font-size: 1.2em;
-                }
-
-                @include media-breakpoint-up(lg) {
-                    font-size: 1.3em;
-                }
-
-                @include media-breakpoint-up(xl) {
-                    font-size: 1.5em;
-                }
-            }
-
             svg {
-                width: 25px;
+                width: 175px;
 
                 @include media-breakpoint-up(md) {
-                    width: 30px;
-                }
-
-                @include media-breakpoint-up(lg) {
-                    width: 35px;
+                    width: 225px;
                 }
             }
         }

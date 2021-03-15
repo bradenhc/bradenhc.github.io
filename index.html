@@ -5,16 +5,37 @@ title: Braden Hitchcock | Home
 ---
 <section class="hero">
     <div class="row justify-content-center">
-        <div class="col-md-3 col-lg-2 slogan-container">
+        <div class="col-md-4 col-lg-3 col-xl-2 slogan-container">
             <h1 class="slogan">Innovate. Instruct. Inspire.</h1>
         </div>
-        <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="col-md-5 col-lg-4 text-center">
             <img class="portfolio-image" src="/assets/images/profile-black-white.jpg" />
         </div>
     </div>
     <div class="row">
         <div class="col about">
         <p class="text-center">Husband, father, avid coder, aspiring software architect.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center recent-posts">
+        <div class="col-md-10 col-lg-8 col-xl-6 recent-posts-list">
+            <hr />
+            <h3 class="text-center">Recent Posts</h3>
+            {% for post in site.posts limit:3 %}
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ post.url }}">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ post.title }}</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
+                                    <p class="card-text">{{ post.excerpt | truncatewords: 50 }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>
