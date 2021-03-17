@@ -5,6 +5,15 @@
 .posts {
     margin: 10px;
     padding: 10px;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     li {
         list-style: none;
         display: flex;
@@ -12,16 +21,14 @@
         align-items: stretch;
         margin-top: 15px;
 
-        p {
-            font-family: $fBody;
-        }
-
-        a {
-            color: inherit;
-
-            &:hover {
+        &:hover {
+            .post-title {
                 text-decoration: underline;
             }
+        }
+
+        p {
+            font-family: $fBody;
         }
 
         .post-title {

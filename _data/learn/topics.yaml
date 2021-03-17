@@ -2,6 +2,7 @@
   name: 'Introduction to Rust'
   subtitle: 'A Crash Course in Efficient Systems Programming'
   url: '/learn/rust/'
+  logo: /assets/images/rust/rust-logo.png
   overview: >
     This webinar provides a brief overview of "The Rust Programming Language", focusing on the the key introductory 
     concepts required to hit the ground running with your first Rust project. You will learn about the syntax of the

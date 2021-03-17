@@ -3,6 +3,7 @@ layout: learn-content
 header: default
 title: Learn | Rust - Common Programming Concepts
 
+section_number: 2
 section_title: 2.2 - Control Flow
 section_description: >
   Learn how to add conditional logic and complex flow to your application through the use of if expressions and loops.

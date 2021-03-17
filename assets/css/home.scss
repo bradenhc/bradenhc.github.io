@@ -71,4 +71,12 @@
             }
         }
     }
+
+    .link-more-posts {
+        color: $cLink;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

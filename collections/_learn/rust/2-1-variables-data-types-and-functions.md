@@ -3,6 +3,7 @@ layout: learn-content
 header: default
 title: Learn | Rust - Common Programming Concepts
 
+section_number: 2
 section_title: 2.1 - Variables, Data Types, and Functions
 section_description: >
   In our discussion or common programming concepts, we start by looking at the fundamental building blocks of

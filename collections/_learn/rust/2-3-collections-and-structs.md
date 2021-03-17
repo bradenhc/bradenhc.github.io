@@ -3,6 +3,7 @@ layout: learn-content
 header: default
 title: Learn | Rust - Common Programming Concepts
 
+section_number: 2
 section_title: 2.3 - Collections and Structs
 section_description: >
   Use two of the most commonly used collections in Rust (Vectors and Strings) to make even more complex programs. Learn

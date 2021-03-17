@@ -1,28 +1,57 @@
 ---
 layout: default
 ---
+{% for t in site.data.learn.topics %}
+    {% if t.id == page.topic %}
+        {% assign topic = t %}
+    {% endif %}
+{% endfor %}
 <main class="container container-main container-learn-outline">
-    <div class="outline-header">
-        <img src="{{ page.topic_logo_url }}" />
-        <h1>{{ page.topic_display_name }}</h1>
+    <div class="row">
+        <div class="col">
+            <div class="outline-header mb-3">
+                <img src="{{ topic.logo }}" />
+                <h1>{{ topic.name }}</h1>
+                <h6 class="text-center text-muted">{{ topic.subtitle }}</h6>
+            </div>
+        </div>
     </div>
-    <ul class="outline">
-        {% for section in site.learn %}
-            {% if section.topic == page.topic %}
-                {% unless section.url contains "index" %}
-                    <a class="section-link" href="{{section.url}}">
-                        <li class="section">
-                            <img 
-                                class="section-thumbnail"
-                                src="https://img.youtube.com/vi/{{ section.youtube_video_id }}/default.jpg" />
-                            <div class="section-summary">
+    <div class="row justify-content-center">
+        <div class="col">
+            <p>{{ topic.overview }}</p>
+        </div>
+    </div>
+    <div class="row">
+    {% assign current_section_number = 0 %}
+    {% for section in site.learn %}
+        {% if section.topic == topic.id %}
+            {% unless section.url contains "index" %}
+                {% if current_section_number != section.section_number %}
+                    {% assign current_section_number = section.section_number %}
+                    </ul>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Section {{section.section_number}}</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="outline">
+                {% endif %}
+                <a class="section-link" href="{{section.url}}">
+                    <li class="section">
+                        <div class="row">
+                            <div class="col section-summary">
                                 <h3 class="section-title">{{section.section_title}}</h3>
                                 <p class="section-description">{{section.section_description | markdownify }}</p>
                             </div>
-                        </li c>
-                    </a>
-                {% endunless %}
-            {% endif %}
-        {% endfor %}
-    </ul>
+                        </div>
+                    </li>
+                </a>
+            {% endunless %}
+        {% endif %}
+    {% endfor %}
+    </div>
+    <div class="mt-5 mb-5"></div>
 </main>

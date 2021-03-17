@@ -3,18 +3,29 @@ layout: learning-resources
 title: Braden Hitchcock | Learn
 header: default
 ---
-<div class="welcome-banner">
-    {% include vectors/learning-logo.svg %}
-    <h1>Learning Resources</h1>
+<div class="row justify-content-md-center">
+    <div class="col-md-10 col-xl-9">
+        <div class="welcome-banner mb-3">
+            {% include vectors/learn.svg %}
+            <h1>Learning Resources</h1>
+        </div>
+        <div class="resources">
+            {% for topic in site.data.learn.topics %}
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ topic.url }}">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{topic.name}}</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">{{ topic.subtitle }}</h6>
+                                    <p class="card-text">{{ topic.overview }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
-<ul class="resources">
-    {% for topic in site.data.learn.topics %}
-        <li>
-            <a href="{{topic.url}}">
-                <h2 class="topic-name">{{topic.name}}</h2>
-                <i class="topic-subtitle">{{topic.subtitle}}</i>
-            </a>
-            <p>{{topic.overview}}</p>
-        </li>
-    {% endfor %}
-</ul>
+<div class="mt-5 mb-5"></div>

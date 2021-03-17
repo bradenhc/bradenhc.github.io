@@ -3,6 +3,7 @@ layout: learn-content
 header: default
 title: Learn | Rust - Common Programming Concepts
 
+section_number: 2
 section_title: 2.4 - Enums and Error Handling
 section_description: >
   Understand the use of enumerations and the `match` control flow operator. Explore the two types of
