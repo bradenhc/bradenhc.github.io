@@ -285,7 +285,7 @@ highlights = [
 name = "Personal Projects"
 
 [[sections.content]]
-title = "Scootr Studio: Serverless of Wheels"
+title = "Scootr Studio: Serverless on Wheels"
 subtitle = "Unifying the design, development, and deployment of microservice-based systems"
 location = ""
 dates = { start = "", end = "" }
