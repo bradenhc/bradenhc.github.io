@@ -65,11 +65,14 @@
     }
 
     table {
+        margin: auto;
         font-size: 0.9em;
 
         thead {
             font-family: $fHeader;
-            font-weight: bold;
+            font-weight: 800;
+            background-color: $cBlueDark;
+            color: $cWhite;
 
             tr {
                 border-bottom: 2px solid $cTableBorder;
@@ -101,6 +104,13 @@
                     border-right: 1px solid transparent;
                 }
             }
+        }
+
+        & + p {
+            font-size: 0.9em;
+            display: block;
+            text-align: center;
+            margin: 7px auto;
         }
     }
 

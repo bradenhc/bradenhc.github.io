@@ -5,7 +5,10 @@ layout: default
     <div class="row justify-content-md-center">
         <div class="col-md-10 col-xl-8">
             <h1>{{ page.title }}</h1>
-            <span>{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
+            <span class="date-author">{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
+            {% assign words = content | number_of_words %}
+            {% assign time = words | divided_by: 400 | plus: 1 %}
+            <span class="reading-time">Reading time: {{ time }} {%if time > 1 %} mins {% else %} min {% endif %}</span> 
 
             {{ content }}
 
