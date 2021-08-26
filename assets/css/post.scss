@@ -1,5 +1,6 @@
 ---
 ---
+@import "breakpoints";
 @import "post";
 
 .container-main {
@@ -10,17 +11,46 @@
     margin-top: 100px !important;
     padding-bottom: 100px !important;
 
-    .reading-time {
-        float: right;
+    .post-header {
+        margin-bottom: 16px;
+
+        .post-info {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.9em;
+            font-style: italic;
+
+            @include media-breakpoint-up(md) {
+                flex-direction: row;
+            }
+
+            .date-author {
+                justify-self: flex-start;
+            }
+
+            .reading-time {
+                margin-left: 0;
+    
+                @include media-breakpoint-up(md) {
+                    margin-left: auto;
+                }
+            }
+
+        }
+
     }
 
-}
+    
 
-.post-footer {
-    display: flex;
-
-    .signature {
-        color: #555555;
-        margin-left: auto;
+    .post-footer {
+        display: flex;
+        font-size: 0.9em;
+        font-style: italic;
+    
+        .signature {
+            color: #555555;
+            margin-left: auto;
+        }
     }
+
 }
