@@ -105,7 +105,7 @@ Now we know exactly how the value of `pProperty` is managed. `std::shared_ptr` w
 
 ## Borrower
 
-Borrowers only **reference the value owned by another variable**, which means that they cannot live longer than the value's owner. This duration is life is known as a variable's lifetime. Once the lifetime of a variable ends, any values it owns must be discarded properly.
+Borrowers only **reference the value owned by another variable**, which means that they cannot live longer than the value's owner. This duration of life is known as a variable's lifetime. Once the lifetime of a variable ends, any values it owns must be discarded properly.
 
 In our example, let's assume an appraiser comes to inspect the property. The `Appraiser` doesn't own the property, so we can use a reference to communicate that they never own the value of `pProperty`. Using a reference also helps communicate that the `Appraiser` also can't live longer than the `Property` value they are inspecting (which makes sense in the real world, too).
 
@@ -143,6 +143,8 @@ The following information is helpful when deciding how to communicate ownership 
 | `T`                         | The owner is the sole owner of a new value.                                            |
 | `T&`                        | The borrower needs to modify the value.                                                |
 | `const T&`                  | The borrower needs information about the value, but doesn't need to modify it.         |
+
+_Table 1: Communicating ownership with types in C++_
 
 Additional information about some common practices for communicating ownership can be found in the [C++ Core Guidelines][c++-core-guidelines].
 
