@@ -29,6 +29,18 @@
     <!-- Include Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/cf05308278.js"></script>
 
+    {% if jekyll.environment == "production" %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWTGXZ7X13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TWTGXZ7X13');
+    </script>
+    {% endif %}
+
     <!-- Include Custom CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="stylesheet" href="/assets/css/{{page.layout}}.css" />
