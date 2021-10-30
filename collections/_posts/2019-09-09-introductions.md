@@ -3,6 +3,7 @@ layout: post
 header: default
 title: Introductions
 author: Braden Hitchcock
+discord: D7RXUMYJsG
 ---
 Welcome! My name is Braden Hitchcock. I'm currently a graduate student at Oregon State University pursuing a master's degree in Computer Science with an emphasis in Software Innovation. I have a bachelor's degree in C.S. from Brigham Young University and about three years of professional programming experience under my belt. I'm fresh on my journey towards becoming (what I hope to be) a world-class software architect, and I look forward the many challenges and opportunities that lie ahead!
 

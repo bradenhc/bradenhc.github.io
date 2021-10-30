@@ -3,6 +3,7 @@ layout: post
 header: default
 title: 'Ownership and Software Design'
 author: Braden Hitchcock
+discord: R94qxZcT4a
 ---
 
 Clearly communicating the intent of your code is one of the most powerful skills you can acquire in software engineering. It increases productivity, reduces stress, and lowers the entry barrier for new software developers. One aspect of a software application that is oftentimes not communicated clearly is ownership. Ownership, although simple in definition, is a powerful principle that not only solves common problems with memory management and multithreading, but also aids developers in creating well-designed software that is easy to understand&mdash;software that new developers can wrap their heads around quickly.

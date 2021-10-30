@@ -1,6 +1,7 @@
 ---
 ---
 @import "breakpoints";
+@import "colors";
 @import "post";
 
 .container-main {
@@ -47,6 +48,10 @@
         font-size: 0.9em;
         font-style: italic;
     
+        .discord-invite {
+            color: $cLink;
+        }
+
         .signature {
             color: #555555;
             margin-left: auto;

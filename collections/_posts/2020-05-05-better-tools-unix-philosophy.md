@@ -3,6 +3,7 @@ layout: post
 header: default
 title: 'Building Better Tools: Implementing the UNIX Philosophy in C/C++'
 author: Braden Hitchcock
+discord: GMJYzT9puZ
 ---
 
 Engineering is about building things that last. In every engineering discipline, engineers strive to invent structures, materials, compounds, and machines that can be used every day for years to come to make the world a better place.

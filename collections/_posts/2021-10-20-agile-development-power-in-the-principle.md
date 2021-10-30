@@ -4,6 +4,7 @@ header: default
 title: 'Agile Development: Power in the Principle'
 author: Braden Hitchcock
 tags: [ Agile, DevOps, DevSecOps ]
+discord: 9R54XXTeV2
 ---
 
 The word "agile" as applied to the creation and management of software development processes has been a buzz-word for several years now. But what does it actually mean? Why do we use the word "agile"?
