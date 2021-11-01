@@ -45,11 +45,22 @@
 
     .post-footer {
         display: flex;
+        flex-direction: column-reverse;
         font-size: 0.9em;
         font-style: italic;
     
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+
         .discord-invite {
+            margin-left: auto;
             color: $cLink;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: 0;
+        }
         }
 
         .signature {
