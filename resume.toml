@@ -43,7 +43,34 @@ icon = { type = "image", content = "images/icons/ngc.png"}
 url = "https://northropgrumman.com"
 tags = []
 highlights = [
-
+    """\
+    Co-led the transformation of a legacy monolithic system for missile tracking into a distributed, real-time \
+    microservice architecture as part of a small team of senior-level software and algorithm developers.\
+    """,
+    """\
+    Participated in the creation of a proposal estimating required effort to create and maintain infrastructure for a \
+    distributed, real-time object tracking system as part of larger re-architecture effort.\
+    """,
+    """\
+    Redesigned and refactored an event simulator for tracking algorithm development, resulting in a significant \
+    increase in flexibility, extensibility, and performance, including a 60% increase in event processing speed.\
+    """,
+    """\
+    Co-led the research, design, and implementation of a Multi-Classification DevSecOps process that increased \
+    maintainability and scalability of software components, improved employee engagement, and increased our ability to \
+    bring in more talent.\
+    """,
+    """\
+    Presented at multiple seminars for disseminating technical expertise and providing professional development \
+    opportunities for fellow employees.\
+    """,
+    """\
+    Trained fellow employees on modern software development technologies, practices, and processes.\
+    """,
+    """\
+    Assisted junior developers in developing a greater understanding of the principles behind good software design and \
+    implementation.\
+    """
 ]
 
 [[sections.content]]
@@ -139,6 +166,30 @@ highlights = [
     """\
     Coursework includes software engineering, distributed systems, networking, computer security, data structures, and \
     algorithms \
+    """
+]
+
+#
+# Certifications
+#
+[[sections]]
+name = "Certifications"
+
+[[sections.content]]
+title = "Software Architecture Professional"
+subtitle = "Carnegie Mellon University SEI"
+location = "Pittsburgh, PA"
+dates = { start = "In Progress", end = "Feb. 2022" }
+extra = ""
+icon = { type = "image", content = "images/icons/cmu.png"}
+url = ""
+tags = []
+highlights = [
+    """\
+    Mastery includes demonstrating a deep understanding of fundamental principles and patterns of software \
+    architecture, including identifying system quality attributes, engaging with stakeholders to address requirements \
+    and risks, performing analysis of existing architectures, and effectively communicating software architecture \
+    through documentation
     """
 ]
 
