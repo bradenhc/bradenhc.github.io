@@ -10,6 +10,7 @@
     p {
         margin-block-start: 1.5em;
         margin-block-end: 1.5em;
+        line-height: 1.7em;
 
         a {
             color: $cLink !important;
@@ -38,6 +39,7 @@
     
     h1, h2, h3, h4, h5, h6 {
         font-family: $fHeader;
+        scroll-margin-top: 5.7rem;
     }
 
     blockquote {
@@ -56,6 +58,11 @@
             display: block;
             text-align: center;
         }
+    }
+
+    img.emoji {
+        display: inline;
+        margin-bottom: 8px;
     }
 
     li {

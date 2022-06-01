@@ -22,3 +22,6 @@ defaults:
       layout: resume
       header: transparent
       title: Braden Hitchcock | Resume
+
+plugins:
+  - jemoji
