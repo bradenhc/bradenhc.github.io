@@ -22,6 +22,10 @@ defaults:
       layout: resume
       header: transparent
       title: Braden Hitchcock | Resume
+  - scope:
+      type: posts
+    values:
+      enable_discord: false
 
 plugins:
   - jemoji
