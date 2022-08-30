@@ -5,16 +5,14 @@ name: Braden Hitchcock
 position: Software Engineer
 image_url: /public/images/profile-avatar-lg.png
 about: >
-  Husband, father, and avid coder specializing in software architecture. I am
-  passionate about well-designed, data-driven distributed systems that showcase
-  maintainability, flexibility, and efficiency. I have experience designing and
-  building microservice-based systems and implementing methods that encourage
-  scalable software development. My experienced has blessed me with many
-  opportunities to contribute to cutting edge applications and research novel
-  technologies in the pursuit of protecting our country and facilitating its
-  growth. Along the way I've had the privilege to build distributed
-  data-processing frameworks, simulators, web-based applications, websites, and
-  online tools.
+  I'm a husband, father, and avid coder specializing in software architecture.
+  When I'm not spending time with my family, serving in my church, or training
+  for a marathon, you can find me exploring the cutting edge of software
+  engineering and architecture. I focus primarily on distributed real-time data
+  processing systems and aim to produce high-quality solutions using the
+  principles and practices from my research. My professional mantra is
+  "Innovate. Instruct. Inspire.", and I always look for opportunities that will
+  allow me to contribute meaningfully in these three areas.
 
 #
 # Contact Information
@@ -164,7 +162,7 @@ sections:
         location: "Corvalis, OR"
         dates:
           start: Mar. 2020
-          end: ''
+          end: ""
         extra: 3.77 GPA
         icon:
           type: image
@@ -181,7 +179,7 @@ sections:
         location: "Provo, UT"
         dates:
           start: Apr. 2018
-          end: ''
+          end: ""
         extra: 3.66 GPA
         icon:
           type: image
@@ -410,10 +408,10 @@ sections:
     content:
       - title: Eagle Scout Award
         subtitle: Boy Souts of America
-        location: ''
+        location: ""
         dates:
           start: Dec. 2012
-          end: ''
+          end: ""
         icon:
           type: image
           content: /public/images/icons/bsa.png
