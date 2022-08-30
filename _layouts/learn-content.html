@@ -1,21 +1,19 @@
 ---
 layout: default
 ---
-<main class="container container-main container-learn-content">
-    <div class="video-container">
-        <iframe
-            class="video-content"
-            width="560"
-            height="316"
-            src="https://www.youtube.com/embed/{{page.youtube_video_id}}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
-    <div class="header">
-        <h1>{{ page.section_title }}</h1>
-        <p class="description">{{ page.section_description }}</p>
-    </div>
-    {{ content }}
-</main>
+
+<h1>{{ page.section.title }}</h1>
+<div class="video-container">
+  <iframe
+    class="video-iframe"
+    src="https://www.youtube.com/embed/{{page.section.youtube_id}}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  >
+  </iframe>
+</div>
+
+<p class="section-description">{{ page.section.description }}</p>
+
+{{ content }}

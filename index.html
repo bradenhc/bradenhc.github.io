@@ -1,51 +1,44 @@
 ---
-layout: home
-header: home
-title: Braden Hitchcock | Home
+layout: default
+title: Home
 ---
-<section class="hero">
-    <div class="row justify-content-center">
-        <div class="col-md-4 col-lg-3 col-xl-2 slogan-container">
-            <h1 class="slogan">Innovate. Instruct. Inspire.</h1>
-        </div>
-        <div class="col-md-5 col-lg-4 text-center">
-            <img class="portfolio-image" src="/assets/images/profile-black-white.jpg" />
-        </div>
+
+<div class="home">
+  <div class="home-hero">
+    <h1 class="hero-shoutout">Hello, world!<br />My name is Braden.</h1>
+    <img src="/public/images/profile-black-white.jpg" />
+  </div>
+  <span class="home-intro">
+    I'm a husband, father, and avid coder specializing in software architecture.
+  </span>
+  <div class="home-recent-posts">
+    <h2 class="home-recent-posts-title">Recent Posts</h2>
+    {% for post in site.posts limit: 3 %}
+    <hr />
+    <div class="post">
+      <h2 class="post-title">
+        <a href="{{ post.url | absolute_url }}"> {{ post.title }} </a>
+      </h2>
+
+      <div class="post-info">
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+        <span class="post-reading-time">
+          {% assign words = post.content | number_of_words %} {% assign time =
+          words | divided_by: 400 | plus: 1 %}
+          <i class="fas fa-clock fa-sm"></i> {{ time }} {%if time > 1 %} mins {%
+          else %} min {% endif %}
+        </span>
+      </div>
+
+      <p class="post-excerpt">
+        {{ post.excerpt | newline_to_br | strip_newlines | replace: '<br />', '' 
+        | strip_html | strip | truncatewords: 50 }}
+      </p>
+
+      <a class="post-link" href="{{ post.url}}">Read on...</a>
     </div>
-    <div class="row">
-        <div class="col about">
-            <h1 class="text-center">Husband, father, avid coder, aspiring software architect.</h4>
-        </div>
-    </div>
-</section>
-<section class="recent-posts">
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-6 recent-posts-list">
-            <hr />
-            <h3 class="text-center">Recent Posts</h3>
-            {% for post in site.posts limit:3 %}
-                <div class="row">
-                    <div class="col">
-                        <a href="{{ post.url }}">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ post.title }}</h4>
-                                    <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date_to_string: "ordinal", "US" }}</h6>
-                                    <p class="card-text">{{ post.excerpt | truncatewords: 50 }}</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            {% endfor %}
-            <div class="row">
-                <div class="col">
-                    <a class="link-more-posts" href="/blog">
-                        <p class="text-center">View More Posts</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="mt-5 mb-5"></div>
+    {% endfor %}
+  </div>
+
+  <a class="home-view-posts" href="/blog/">View more posts</a>
+</div>

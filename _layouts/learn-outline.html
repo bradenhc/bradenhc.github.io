@@ -1,57 +1,36 @@
 ---
 layout: default
 ---
-{% for t in site.data.learn.topics %}
-    {% if t.id == page.topic %}
-        {% assign topic = t %}
-    {% endif %}
-{% endfor %}
-<main class="container container-main container-learn-outline">
-    <div class="row">
-        <div class="col">
-            <div class="outline-header mb-3">
-                <img src="{{ topic.logo }}" />
-                <h1>{{ topic.name }}</h1>
-                <h6 class="text-center text-muted">{{ topic.subtitle }}</h6>
-            </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col">
-            <p>{{ topic.overview }}</p>
-        </div>
-    </div>
-    <div class="row">
-    {% assign current_section_number = 0 %}
-    {% for section in site.learn %}
-        {% if section.topic == topic.id %}
-            {% unless section.url contains "index" %}
-                {% if current_section_number != section.section_number %}
-                    {% assign current_section_number = section.section_number %}
-                    </ul>
-                    </div>
-                    <hr/>
-                    <div class="row">
-                        <div class="col">
-                            <h4>Section {{section.section_number}}</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul class="outline">
-                {% endif %}
-                <a class="section-link" href="{{section.url}}">
-                    <li class="section">
-                        <div class="row">
-                            <div class="col section-summary">
-                                <h3 class="section-title">{{section.section_title}}</h3>
-                                <p class="section-description">{{section.section_description | markdownify }}</p>
-                            </div>
-                        </div>
-                    </li>
-                </a>
-            {% endunless %}
+
+{% assign topic = site.data.learn.topics[page.topic] %}
+
+<div class="topic-outline-header">
+  <img class="topic-image" src="{{ topic.logo }}" />
+  <h1 class="topic-title">{{ topic.name }}</h1>
+  <h3 class="topic-subtitle">{{ topic.subtitle }}</h6>
+</div>
+<p>{{ topic.overview }}</p>
+
+<div class="sections">
+  {% assign current_section_number = 0 %}
+  {% for section_page in site.learn %}
+    {% if section_page.topic == page.topic %}
+      {% unless section_page.url contains "index" %} 
+        {% if current_section_number != section_page.section.number %}
+          {% assign current_section_number = section_page.section.number %}
+          <hr />
+          <h4>Section {{section_page.section.number}}</h4>
         {% endif %}
-    {% endfor %}
-    </div>
-    <div class="mt-5 mb-5"></div>
-</main>
+          <div class="section">
+              <h3 class="section-title">{{section_page.section.title}}</h3>
+              <p class="section-description">
+                {{section_page.section.description | markdownify }}
+              </p>
+              <div class="section-footer">
+                <a class="topic-link" href="{{section_page.url}}">Learn More</a>
+              </div>
+          </div>
+      {% endunless %} 
+    {% endif %} 
+  {% endfor %}
+</div>

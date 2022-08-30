@@ -1,0 +1,290 @@
+/* Custom styling for Hitchcock Codes elements */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 38em) {
+  .home-hero {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.hero-shoutout {
+  color: #002e5d;
+  text-align: center;
+  line-height: 3.1rem;
+  margin-top: 0;
+}
+
+@media (min-width: 38em) {
+  .hero-shoutout {
+    text-align: left;
+    max-width: 13rem;
+  }
+}
+
+@media (min-width: 38em) {
+  .home-hero img {
+    width: 18rem;
+  }
+}
+
+.home-intro {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.home-recent-posts-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-view-posts {
+  display: block;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+img.emoji {
+  display: inline;
+  margin: 0.2rem 0.2rem -0.1rem 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.3rem;
+}
+
+.sidebar-avatar {
+  width: 50px;
+  border-radius: 25%;
+  margin: 0;
+}
+
+@media (min-width: 38em) {
+  .sidebar-avatar {
+    width: 60px;
+  }
+}
+
+.sidebar-intro {
+  margin-left: 0.8rem;
+}
+
+.sidebar-description {
+  display: block;
+}
+
+.sidebar-slogan {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.post img {
+  display: block;
+  margin: auto;
+}
+
+.topic {
+  margin-bottom: 4em;
+}
+
+.topic-title a {
+  color: #303030;
+}
+
+.topic-title {
+  margin-top: 0;
+}
+
+.topic-subtitle {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+.topic-footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topic-outline-header {
+  text-align: center;
+}
+
+.topic-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.topic-link {
+  float: right;
+}
+
+.sections {
+    margin-bottom: 5rem;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.section-description {
+    margin-top: 1rem;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Resume */
+.resume-name {
+  text-align: center;
+  margin: 0;
+}
+
+.resume-position {
+  display: block;
+  color: #959595;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 38em) {
+  .resume-header {
+    display: block;
+  }
+}
+
+.resume-profile {
+  width: 17rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 38em) {
+  .resume-profile {
+    float: left;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 38em) {
+  .resume-about {
+    margin-top: 1rem;
+  }
+}
+
+.resume-section-title {
+  text-align: center;
+  background: #ccc;
+  padding: 0.3rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.1rem;
+}
+
+.resume-content {
+  margin-bottom: 1rem;
+}
+
+.resume-content-header {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 38em) {
+  .resume-content-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.resume-content-header-tl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resume-content-icon {
+  color: #959595;
+  width: 4rem;
+  font-size: 3rem;
+}
+.resume-content-image {
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 0.9rem;
+  margin: 0;
+}
+
+.resume-content-header-titles {
+  margin-left: 1rem;
+}
+
+.resume-content-title {
+  margin: 0;
+}
+
+.resume-content-subtitle {
+  display: block;
+  color: #9a9a9a;
+}
+
+.resume-content-header-br {
+  display: flex;
+  margin-left: 5rem;
+}
+
+@media (min-width: 38em) {
+  .resume-content-header-br {
+    flex-direction: column;
+    margin: 0 0.5rem 1rem 0;
+    white-space: nowrap;
+  }
+}
+
+.resume-content-dates {
+  color: #9a9a9a;
+}
+
+.resume-content-extra {
+  color: #959595;
+}
+
+.resume-footer {
+  margin-bottom: 4rem;
+}

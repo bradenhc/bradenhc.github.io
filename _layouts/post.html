@@ -1,33 +1,20 @@
 ---
 layout: default
 ---
-<main class="container container-main container-post">
-    <div class="row justify-content-md-center">
-        <div class="col-md-10 col-xl-8">
-            <div class="post-header">
-                <h1>{{ page.title }}</h1>
-                <div class="post-info">
-                    <div class="date-author">
-                        {{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}
-                    </div>
-                    <div class="reading-time">
-                        {% assign words = content | number_of_words %}
-                        {% assign time = words | divided_by: 400 | plus: 1 %}
-                        Reading time: {{ time }} {%if time > 1 %} mins {% else %} min {% endif %}
-                    </div> 
-                </div>
-            </div>
 
-            {{ content }}
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-info">
+    <span class="post-date">{{ page.date | date_to_string }}</span>
+    <span class="post-reading-time">
+      {% assign words = content | number_of_words %}
+      {% assign time = words | divided_by: 400 | plus: 1 %}
+      <i class="fas fa-clock fa-sm"></i> {{ time }} {%if time > 1 %} mins {% else %} min {% endif %}
+    </span> 
+  </div>
+  {{ content }}
 
-            <div class="post-footer">
-                {%if page.enable_discord %}
-                    <a class="discord-invite" href="https://discord.gg/j5ecw4Dfg3">
-                        Join the conversation on Discord! <i class="fab fa-discord fa-1x"></i> 
-                    </a>
-                {%endif%}
-                <span class="signature">{{ page.date | date_to_string: "ordinal", "US" }} - {{ page.author }}</span>
-            </div>
-        </div>
-    </div>
-</main>
+  <div class="post-footer">
+    <span class="post-signature"><cite>- Braden Hitchcock</cite></span>
+  </div>
+</div>

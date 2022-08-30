@@ -1,0 +1,422 @@
+#
+# Introduction
+#
+name: Braden Hitchcock
+position: Software Engineer
+image_url: /public/images/profile-avatar-lg.png
+about: >
+  Husband, father, and avid coder specializing in software architecture. I am
+  passionate about well-designed, data-driven distributed systems that showcase
+  maintainability, flexibility, and efficiency. I have experience designing and
+  building microservice-based systems and implementing methods that encourage
+  scalable software development. My experienced has blessed me with many
+  opportunities to contribute to cutting edge applications and research novel
+  technologies in the pursuit of protecting our country and facilitating its
+  growth. Along the way I've had the privilege to build distributed
+  data-processing frameworks, simulators, web-based applications, websites, and
+  online tools.
+
+#
+# Contact Information
+#
+contact:
+  email: ""
+  mobile: ""
+  address: ""
+
+#
+# External Links
+#
+links:
+  - name: GitHub
+    icon:
+      type: svg
+      content: github
+    url: "https://github.com/bradenhc"
+  - name: LinkedIn
+    icon:
+      type: svg
+      content: linkedin
+    url: "https://linkedin.com/in/bradenhc"
+
+#
+# Sections
+#
+sections:
+  # Professional Experience
+  #
+  - name: Professional Experience
+    content:
+      - title: Software Engineer
+        subtitle: Northrop Grumman Corporation
+        location: "Boulder, CO"
+        dates:
+          start: Apr. 2020
+          end: Present
+        icon:
+          type: image
+          content: /public/images/icons/ngc.png
+        url: "https://northropgrumman.com"
+        tags: []
+        highlights:
+          - >-
+            Co-led the transformation of a legacy monolithic system for missile
+            tracking into a distributed, real-time microservice architecture as
+            part of a small team of senior-level software and algorithm
+            developers.
+          - >-
+            Participated in the creation of a proposal estimating required
+            effort to create and maintain infrastructure for a distributed,
+            real-time object tracking system as part of larger re-architecture
+            effort.
+          - >-
+            Redesigned and refactored an event simulator for tracking algorithm
+            development, resulting in a significant increase in flexibility,
+            extensibility, and performance, including a 60% increase in event
+            processing speed.
+          - >-
+            Co-led the research, design, and implementation of a
+            Multi-Classification DevSecOps process that increased
+            maintainability and scalability of software components, improved
+            employee engagement, and increased our ability to bring in more
+            talent.
+          - >-
+            Presented at multiple seminars for disseminating technical expertise
+            and providing professional development opportunities for fellow
+            employees.
+          - >-
+            Trained fellow employees on modern software development
+            technologies, practices, and processes.
+          - >-
+            Assisted junior developers in developing a greater understanding of
+            the principles behind good software design and implementation.
+      - title: Software Architect Intern
+        subtitle: Viewpoint Construction Software
+        location: Portland, OR
+        dates:
+          start: Jun. 2019
+          end: Sep. 2019
+        icon:
+          type: image
+          content: /public/images/icons/vp.png
+        url: "https://viewpoint.com"
+        tags: []
+        highlights:
+          - >-
+            Designed and implemented an API management system hosted in Azure,
+            enabling the company to increase revenue through public APIs
+          - >-
+            Redesigned and refactored a legacy .NET Framework application,
+            migrating it to .NET Core, furthering the company vision of running
+            microservices in Kubernetes
+          - >-
+            Participated in Domain Driven Design of innovated microservices
+            connected via Apache Kafka
+      - title: Software Developer Intern
+        subtitle: Northrop Grumman Corporation
+        location: "Boulder, CO"
+        dates:
+          start: May 2017
+          end: Dec. 2018
+        icon:
+          type: image
+          content: /public/images/icons/ngc.png
+        url: "https://northropgrumman.com"
+        tags: []
+        highlights:
+          - >-
+            Developed a framework in Java and C++ for altering the workflow of
+            big-data through processing applications at runtime, dramatically
+            reducing coupling among system components and reducing maintenance
+            and evolution costs
+          - >-
+            Developed a C++ library for bootstrapping applications running in a
+            modular framework, reducing third-party app code count by 70%
+          - >-
+            Designed and built user interfaces in Angular 6 and ReactJS for
+            various company projects, helping the company provide modern,
+            cloud-friendly access to their applications
+      - title: Software Developer
+        subtitle: "Digital Mosaic, Inc."
+        location: "Longmont, CO"
+        dates:
+          start: May 2012
+          end: Jul. 2012
+        icon:
+          type: svg
+          content: code
+        url: "http://www.dgtlmosaic.com/"
+        tags: []
+        highlights:
+          - >-
+            Built a custom user interface in HTML5 for a revolutionary new
+            dialysis machine
+          - >-
+            Participated in meetings about a custom operating system for a new
+            dialysis machine
+
+  # Education
+  #
+  - name: Education
+    content:
+      - title: Master of Science in Computer Science - Software Innovation
+        subtitle: Oregon State University
+        location: "Corvalis, OR"
+        dates:
+          start: Mar. 2020
+          end: ''
+        extra: 3.77 GPA
+        icon:
+          type: image
+          content: /public/images/icons/osu.png
+        url: "https://oregonstate.edu"
+        tags: []
+        highlights:
+          - >-
+            Coursework includes soware engineering, soware evolution,
+            distributed systems, database management systems, machine learning,
+            programming languages, and project management
+      - title: Bachelor of Science in Computer Science
+        subtitle: Brigham Young University
+        location: "Provo, UT"
+        dates:
+          start: Apr. 2018
+          end: ''
+        extra: 3.66 GPA
+        icon:
+          type: image
+          content: /public/images/icons/byu.png
+        url: "https://byu.edu"
+        tags: []
+        highlights:
+          - >-
+            Coursework includes software engineering, distributed systems,
+            networking, computer security, data structures, and algorithms
+
+  # Certifications
+  #
+  - name: Certifications
+    content:
+      - title: Software Architecture Professional
+        subtitle: Carnegie Mellon University SEI
+        location: "Pittsburgh, PA"
+        dates:
+          start: In Progress
+          end: Feb. 2022
+        extra: ""
+        icon:
+          type: image
+          content: /public/images/icons/cmu.png
+        url: ""
+        tags: []
+        highlights:
+          - >-
+            Mastery includes demonstrating a deep understanding of fundamental
+            principles and patterns of software architecture, including
+            identifying system quality attributes, engaging with stakeholders to
+            address requirements and risks, performing analysis of existing
+            architectures, and effectively communicating software architecture
+            through documentation
+
+  # Additional Work Experience
+  #
+  - name: Additional Work Experience
+    content:
+      - title: Head Graduate Teaching Assistant
+        subtitle: Oregon State University
+        location: "Corvallis, OR"
+        dates:
+          start: Jan. 2020
+          end: Apr. 2020
+        icon:
+          type: image
+          content: /public/images/icons/osu.png
+        url: "https://oregonstate.edu"
+        tags: []
+        highlights:
+          - >-
+            Coordinated and led a team of nine undergraduate teaching assistants
+            as we assisted 200 online students learn modern web development
+          - >-
+            Provided instruction, guidance, and mentoring to students and
+            undergraduate teaching assistants
+          - >-
+            Created an assignment submission tool in Node.js with a MySQL
+            persistence layer and CAS authentication to facilitate TA knowledge
+            and skill evaluations
+      - title: Graduate Teaching Assistant
+        subtitle: Oregon State University
+        location: "Corvallis, OR"
+        dates:
+          start: Sep. 2019
+          end: Jan. 2020
+        icon:
+          type: image
+          content: /public/images/icons/osu.png
+        url: "https://oregonstate.edu"
+        tags: []
+        highlights:
+          - >-
+            Instructed students on database fundamentals, helping them gain
+            mastery of MySQL and Node.js to build modern web applications
+      - title: Web Developer/Community Coordinator
+        subtitle: Oregon State University IoT Alliance
+        location: "Corvallis, OR"
+        dates:
+          start: Jan. 2019
+          end: Jun. 2019
+        icon:
+          type: image
+          content: /public/images/icons/osu.png
+        url: "http://groups.engr.oregonstate.edu/iota/"
+        tags: []
+        highlights:
+          - >-
+            Designed and built the alliance website in HTML/CSS/JavaScript with
+            PHP backend and a MySQL persistence layer
+          - >-
+            Designed a project showcase website for students in the Electrical
+            Engineering and Computer Science department to build personal
+            portfolios of projects
+          - >-
+            Assisted in the redesign and implementation of the Senior Design
+            Capstone website, allowing students and professionals to connect and
+            collaborate on various projects
+      - title: Web Developer/Computer Technician
+        subtitle: Brigham Young University Alumni Association
+        location: "Provo, UT"
+        dates:
+          start: Jan. 2016
+          end: Sep. 2017
+        icon:
+          type: image
+          content: /public/images/icons/byu.png
+        url: "http://alumni.byu.edu"
+        tags: []
+        highlights:
+          - >-
+            Designed and implemented online tools using Coldfusion, MySQL,
+            HTML/CSS/JavaScript, automating and improving efficiency for
+            critical chapter reporting
+          - >-
+            Assisted in planning and implementing the upgrade of primary
+            association websites to use the open-source Drupal CMS framework,
+            significantly reducing maintenance overhead and improving usability
+            for employees
+      - title: Lab Technician
+        subtitle: "Digital Mosaic, Inc."
+        location: "Longmont, CO"
+        dates:
+          start: May 2011
+          end: Aug. 2011
+        icon:
+          type: svg
+          content: ""
+        url: "http://www.dgtlmosaic.com/"
+        tags: []
+        highlights:
+          - >-
+            Conducted experiments for fine-tuning and improving a custom
+            dialysis machine
+          - >-
+            Took inventory and organized lab supplies, building additional
+            office furniture as required
+
+  # Leadership
+  #
+  - name: Leadership Experience
+    content:
+      - title: Volunteer Representative
+        subtitle: The Church of Jesus Christ of Latter-day Saints
+        location: "Daejeon, South Korea"
+        dates:
+          start: Jul. 2013
+          end: Jul. 2015
+        icon:
+          type: image
+          content: /public/images/icons/cjc.png
+        url: "https://churchofjesuschrist.org"
+        tags: []
+        highlights:
+          - >-
+            Trained other volunteers on improving their teaching, language, and
+            interpersonal skills
+          - >-
+            Gained fluency in Korean, facilitating our objective to assist
+            others in improving the quality of their lives, accomplishing their
+            goals, and reaching their full potential
+      - title: Seminar Instructor
+        subtitle: Introduction to Rust
+        location: Oregon State University
+        dates:
+          start: Nov. 2019
+          end: ""
+        icon:
+          type: image
+          content: /public/images/icons/rust.png
+        url: "https://rust-lang.org"
+        tags: []
+        highlights:
+          - >-
+            Taught an interactive seminar (recorded as a webinar) on the Rust
+            programming language, providing students with resources to help them
+            build safer and more reliable systems programs
+
+  # Personal Projects
+  #
+  - name: Personal Projects
+    content:
+      - title: "Scootr Studio: Serverless on Wheels"
+        subtitle: >-
+          Unifying the design, development, and deployment of microservice-based
+          systems
+        location: ""
+        dates:
+          start: ""
+          end: ""
+        icon:
+          type: image
+          content: /public/images/icons/scootr.png
+        url: ""
+        tags: []
+        highlights:
+          - >-
+            Currently under active development, this technology leverages the
+            ReactJS, Node.js, Rust, and the Serverless 
+                Framework to build a complete development platform for
+            microservice-based systems, providing the first model-based,
+            interactive integrated development environment for scalable cloud
+            development on any cloud provider (AWS, Azure, GCP, etc.)
+      - title: Python Picos API
+        subtitle: Contributing to Pico labs at Brigham Young University
+        location: ""
+        dates:
+          start: ""
+          end: ""
+        icon:
+          type: image
+          content: /public/images/icons/pico.png
+        url: ""
+        tags: []
+        highlights:
+          - >-
+            Developed a Python module for testing and interacting with the
+            pico-engine, an actor-based, event-driven framework for developing
+            Internet-of-Things technologies
+
+  # Honors and Awards
+  #
+  - name: Honors & Awards
+    content:
+      - title: Eagle Scout Award
+        subtitle: Boy Souts of America
+        location: ''
+        dates:
+          start: Dec. 2012
+          end: ''
+        icon:
+          type: image
+          content: /public/images/icons/bsa.png
+        url: ""
+        tags: []
+        highlights: []

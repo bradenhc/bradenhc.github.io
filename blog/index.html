@@ -1,0 +1,49 @@
+---
+layout: page
+title: Blog
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <hr/>
+  <div class="post">
+    <h2 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+    <div class="post-info">
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      <span class="post-reading-time">
+      {% assign words = post.content | number_of_words %}
+      {% assign time = words | divided_by: 400 | plus: 1 %}
+      <i class="fas fa-clock fa-sm"></i> {{ time }} {%if time > 1 %} mins {% else %} min {% endif %}
+      </span> 
+    </div>
+
+    <p class="post-excerpt">
+        {{ post.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 50 }}
+    </p>
+
+    <a class="post-link" href="{{ post.url}}">Read on...</a>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

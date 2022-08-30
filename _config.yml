@@ -1,0 +1,46 @@
+# Setup
+title:               'Hitchcock Codes'
+tagline:             'Innovate. Instruct. Inspire.'
+description:         'Husband, father, avid coder, software architect'
+url:                 https://hitchcock.codes
+baseurl:             ''
+paginate:            5
+paginate_path:      'blog/page:num'
+
+# About/contact
+author:
+  name:              Braden Hitchcock
+  url:               ''
+  email:             developer.hitchcock@gmail.com
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+  redirects:
+    output: true
+    permalink: /:path
+  learn:
+    output: true
+    permalink: /:collection/:path
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jemoji
+
+defaults:
+  - scope: 
+      type: redirects
+    values:
+      layout: redirect
+  - scope:
+      path: resume/index.html
+    values:
+      layout: resume
+      header: transparent
+      title: Braden Hitchcock | Resume
+
+# Custom vars
+google_analytics_id: G-TWTGXZ7X13

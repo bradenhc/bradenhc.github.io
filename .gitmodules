@@ -1,6 +1,0 @@
-[submodule "apps/group-creator"]
-	path = apps/group-creator
-	url = https://github.com/bradenhc/group-creator.git
-[submodule "resume"]
-	path = resume
-	url = https://github.com/bradenhc/online-resume.git
