@@ -266,6 +266,7 @@ img.emoji {
 
 .resume-content-header-br {
   display: flex;
+  flex-direction: column;
   margin-left: 5rem;
 }
 
@@ -278,10 +279,12 @@ img.emoji {
 }
 
 .resume-content-dates {
+  display: block;
   color: #9a9a9a;
 }
 
 .resume-content-extra {
+  display: block;
   color: #959595;
 }
 
