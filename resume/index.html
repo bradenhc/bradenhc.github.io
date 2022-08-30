@@ -1,0 +1,55 @@
+---
+layout: default
+title: Resume
+---
+
+{% assign res = site.data.resume %}
+
+<h1 class="resume-name">{{ res.name }}</h1>
+<em class="resume-position">{{ res.position }}</em>
+
+<div class="resume-header">
+  <img class="resume-profile" src="{{ res.image_url }}" />
+  <p class="resume-about">{{ res.about }}</p>
+</div>
+
+{% for section in res.sections %}
+<hr />
+<div class="resume-section">
+  <h2 class="resume-section-title">{{ section.name }}</h2>
+  {% for element in section.content %}
+    <div class="resume-content">
+      <div class="resume-content-header">
+        <div class="resume-content-header-tl">
+          {%if element.icon.type == 'svg' %}
+            <i class="resume-content-icon fa fa-{{ element.icon.content }}"></i>
+          {% else %}
+            <img class="resume-content-image" src="{{ element.icon.content }} " />
+          {% endif %}
+          <div class="resume-content-header-titles">
+            <h3 class="resume-content-title">{{ element.title }}</h3>
+            <em class="resume-content-subtitle">{{ element.subtitle }}</em>
+            <em class="resume-content-subtitle">{{ element.location }}</em>
+          </div>
+        </div>
+        <div class="resume-content-header-br">
+          <em class="resume-content-dates">
+            {{ element.dates.start}} 
+            {%if element.dates.end != '' %} 
+              &ndash; {{ element.dates.end }} 
+            {% endif %}
+          </em>
+          <em class="resume-content-extra">{{ element.extra }}</em>
+        </div>
+      </div>
+      <ul class="resume-content-highlights">
+        {% for item in element.highlights %}
+          <li class="resume-highlight-item">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
+{% endfor %}
+
+<div class="resume-footer"></div>
