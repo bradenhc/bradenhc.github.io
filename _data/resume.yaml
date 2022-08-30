@@ -26,15 +26,9 @@ contact:
 # External Links
 #
 links:
-  - name: GitHub
-    icon:
-      type: svg
-      content: github
+  - icon: github
     url: "https://github.com/bradenhc"
-  - name: LinkedIn
-    icon:
-      type: svg
-      content: linkedin
+  - icon: linkedin
     url: "https://linkedin.com/in/bradenhc"
 
 #

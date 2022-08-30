@@ -11,6 +11,13 @@ title: Resume
 <div class="resume-header">
   <img class="resume-profile" src="{{ res.image_url }}" />
   <p class="resume-about">{{ res.about }}</p>
+  <div class="resume-links">
+    {% for link in res.links %}
+      <a class="resume-link" href="{{ link.url }}">
+        <i class="fab fa-{{ link.icon }} fa-2x"></i>
+      </a>
+    {% endfor %}
+  </div>
 </div>
 
 {% for section in res.sections %}

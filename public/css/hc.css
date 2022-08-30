@@ -251,6 +251,17 @@ img.emoji {
   margin: 0;
 }
 
+.resume-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.resume-link {
+  color: #959595;
+  margin: 0 1rem;
+}
+
 .resume-content-header-titles {
   margin-left: 1rem;
 }
