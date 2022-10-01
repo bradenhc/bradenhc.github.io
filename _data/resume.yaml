@@ -193,8 +193,8 @@ sections:
         subtitle: Carnegie Mellon University SEI
         location: "Pittsburgh, PA"
         dates:
-          start: In Progress
-          end: Feb. 2022
+          start: Sep. 2022
+          end: ""
         extra: ""
         icon:
           type: image
