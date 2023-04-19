@@ -11,7 +11,7 @@ paginate_path:      'blog/page:num'
 author:
   name:              Braden Hitchcock
   url:               ''
-  email:             developer.hitchcock@gmail.com
+  email:             ''
 
 # Collections
 collections:
