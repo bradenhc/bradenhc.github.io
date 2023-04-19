@@ -11,6 +11,16 @@ title: Resume
 <div class="resume-header">
   <img class="resume-profile" src="{{ res.image_url }}" />
   <p class="resume-about">{{ res.about }}</p>
+
+  {% for sg in res.skill_groups %}
+    <div class="resume-skill-group">
+      <strong>{{ sg.name }}: &nbsp;</strong>
+      {% for i in sg.items %}
+        {{ i }} {% if forloop.last == false %}&ndash;{% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+
   <div class="resume-links">
     {% for link in res.links %}
       <a class="resume-link" href="{{ link.url }}">

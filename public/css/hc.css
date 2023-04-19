@@ -186,28 +186,15 @@ img.emoji {
   align-items: center;
 }
 
-@media (min-width: 38em) {
-  .resume-header {
-    display: block;
-  }
-}
-
 .resume-profile {
-  width: 17rem;
+  width: 12rem;
   margin-top: 1rem;
 }
 
-@media (min-width: 38em) {
-  .resume-profile {
-    float: left;
-    margin: 1rem;
-  }
-}
-
-@media (min-width: 38em) {
-  .resume-about {
-    margin-top: 1rem;
-  }
+.resume-skill-group {
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
 }
 
 .resume-section-title {

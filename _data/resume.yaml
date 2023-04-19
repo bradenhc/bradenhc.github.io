@@ -5,14 +5,15 @@ name: Braden Hitchcock
 position: Software Engineer
 image_url: /public/images/profile-avatar-lg.png
 about: >
-  I'm a husband, father, and avid coder specializing in software architecture.
-  When I'm not spending time with my family, serving in my church, or training
-  for a marathon, you can find me exploring the cutting edge of software
-  engineering and architecture. I focus primarily on distributed real-time data
-  processing systems and aim to produce high-quality solutions using the
-  principles and practices from my research. My professional mantra is
-  "Innovate. Instruct. Inspire.", and I always look for opportunities that will
-  allow me to contribute meaningfully in these three areas.
+  I'm a husband, father, and avid coder specializing in software architecture. I
+  love spending time with my family, serving in my church, training for
+  marathons, and exploring the cutting-edge of software engineering and
+  architecture. My experience includes distributed real-time data processing
+  systems and engaging with stakeholders on software designs to ensure products
+  meet requirements. In everything I do, I strive to produce high-quality
+  solutions using the principles and practices from my research. My professional
+  mantra is "Innovate. Instruct. Inspire.", and I always look for opportunities
+  that will allow me to contribute meaningfully in these three areas.
 
 #
 # Contact Information
@@ -32,6 +33,47 @@ links:
     url: "https://linkedin.com/in/bradenhc"
 
 #
+# Skills
+#
+skill_groups:
+  - name: Skills
+    items:
+      - Software Architecture
+      - Agile Development
+      - Object-Oriented Design
+      - Containerization
+      - Leading Innovation
+      - Mentoring
+  - name: Languages
+    items:
+      - C++20
+      - Python
+      - JavaScript
+      - HTML/CSS
+      - Rust
+      - Java
+  - name: Tools
+    items:
+      - Git
+      - CMake
+      - Conan
+      - VS Code
+      - Docker
+      - Podman
+      - Kubernetes
+      - OpenShift
+      - Cameo
+  - name: DevOps
+    items:
+      - Jira
+      - Bitbucket
+      - Jenkins
+      - SonarQube
+      - Nexus Repository
+      - Confluence
+      - GitHub
+
+#
 # Sections
 #
 sections:
@@ -39,12 +81,66 @@ sections:
   #
   - name: Professional Experience
     content:
+      - title: Principal Software Engineer
+        subtitle: Northrop Grumman Corporation
+        location: "Boulder, CO"
+        dates:
+          start: Sep. 2022
+          end: Present
+        icon:
+          type: image
+          content: /public/images/icons/ngc.png
+        url: "https://northropgrumman.com"
+        tags: []
+        highlights:
+          - >-
+            Led a multi-background team promoting cross-program software
+            collaboration, providing advice, guidance, and feedback on software
+            architecture, technology choices, and DevOps practices
+          - >-
+            Led a team of engineers with varying levels of experience in the
+            continued development of infrastructure software for the
+            next-generation architecture supporting the tracking components of a
+            missile defense system
+          - >-
+            Contributed to various components written in C++ supporting a wide
+            range of infrastructure software and operational services for a
+            missile defense system
+          - >-
+            Engaged with stakeholders and product owners regularly during agile
+            development of software in order to understand requirements,
+            participate in reviews, and meet their needs
+          - >-
+            Continued leading refinement of a Multi-Classification DevOps
+            process leveraging Bitbucket, Jenkins, SonarQube, Nexus Repository,
+            and OpenShift for containerized CI/CD
+          - >-
+            Trained teams working across multiple programs on a
+            Multi-Classification C++ development process using Conan and modern
+            CI/CD tools, improving maintainability of several codebases and
+            increasing engineering efficiency
+          - >-
+            Designed, developed, and deployed an innovative platform-agnostic
+            framework for validated microservice configuration written in C++
+            using gRPC, now used across multiple contracted programs
+          - >-
+            Analyzed the performance of a component in our missile tracking
+            system written in C/C++, implementing architectural enhancements and
+            code modifications to reduce latency and improve throughput
+          - >-
+            Led an investigation that added in-memory databases to our real-time
+            tracking software using Hazelcast in order to increase scalability
+            and lay groundwork to reduce latency, increase throughput, and
+            improve flexibility and maintainability
+          - >-
+            Led the software development of a customer demonstration written in
+            Python using VTK and Qt to prove expertise and capture new business
       - title: Software Engineer
         subtitle: Northrop Grumman Corporation
         location: "Boulder, CO"
         dates:
           start: Apr. 2020
-          end: Present
+          end: Sep. 2022
         icon:
           type: image
           content: /public/images/icons/ngc.png
