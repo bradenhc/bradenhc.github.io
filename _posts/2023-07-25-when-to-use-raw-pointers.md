@@ -6,7 +6,7 @@ author: Braden Hitchcock
 tags: ["C++", "Ownership", "Memory Management", "Maintainability"]
 ---
 
-I work a lot with legacy C/C++ code. Much if it is written in a pre-C++11 style,
+I work a lot with legacy C/C++ code. Much of it is written in a pre-C++11 style,
 and even when C++11 features are used, they aren't used as effectively as they
 could be.
 
