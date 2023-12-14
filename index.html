@@ -31,7 +31,7 @@ title: Home
       </div>
 
       <p class="post-excerpt">
-        {{ post.excerpt | newline_to_br | strip_newlines | replace: '<br />', '' 
+        {{ post.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' 
         | strip_html | strip | truncatewords: 50 }}
       </p>
 
