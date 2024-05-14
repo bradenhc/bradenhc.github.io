@@ -2,18 +2,23 @@
 # Introduction
 #
 name: Braden Hitchcock
-position: Software Engineer
+position: Principal Software Engineer
 image_url: /public/images/profile-avatar-lg.png
-about: >
+about: >-
   I'm a husband, father, and avid coder specializing in software architecture. I
-  love spending time with my family, serving in my church, training for
-  marathons, and exploring the cutting-edge of software engineering and
-  architecture. My experience includes distributed real-time data processing
-  systems and engaging with stakeholders on software designs to ensure products
-  meet requirements. In everything I do, I strive to produce high-quality
-  solutions using the principles and practices from my research. My professional
-  mantra is "Innovate. Instruct. Inspire.", and I always look for opportunities
-  that will allow me to contribute meaningfully in these three areas.
+  love spending time with my family, serving in my church, exercising outdoors
+  (especially running), and exploring the latest advancements in software
+  engineering.
+  <br/><br/>
+  My experience focuses on the agile development of distributed systems that
+  process space-based sensor data in real-time. I also co-lead a collective
+  of engineers and product owners that lean forward in developing the next
+  generation of systems that protect the U.S. and its allies.
+  <br/><br/>
+  My professional mantra is <strong>"Innovate. Instruct. Inspire."</strong>, and
+  I'm always looking for opportunities that will allow me to contribute
+  meaningfully in these three areas.
+  <br/><br/>
 
 #
 # Contact Information
@@ -47,10 +52,10 @@ skill_groups:
   - name: Languages
     items:
       - C++20
+      - Rust
       - Python
       - JavaScript
       - HTML/CSS
-      - Rust
       - Java
   - name: Tools
     items:
@@ -71,6 +76,7 @@ skill_groups:
       - SonarQube
       - Nexus Repository
       - Confluence
+      - GitLab
       - GitHub
 
 #
