@@ -51,9 +51,10 @@ skill_groups:
       - Mentoring
   - name: Languages
     items:
-      - C++20
+      - C++
       - Rust
       - Python
+      - Go
       - JavaScript
       - HTML/CSS
       - Java

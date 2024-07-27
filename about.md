@@ -3,14 +3,13 @@ layout: page
 title: About
 ---
 
-Welcome! :smile: My name is Braden Hitchcock. I'm a software engineer at
-Northrop Grumman in Boulder, Colorado. I have a bachelor's degree in C.S. from
-Brigham Young University, a master's degree in C.S. with an emphasis in software
-innovation from Oregon State University, and about 5 years of professional
-software experience under my belt. I'm passionate about software architecture,
-particularly as it pertains to hard real-time systems that process large amounts
-of data, and I look forward to the many challenges and opportunities that lie
-ahead!
+Welcome! 😁 My name is Braden Hitchcock. I'm a software engineer at Northrop
+Grumman in Boulder, Colorado. I have a bachelor's degree in C.S. from Brigham
+Young University, a master's degree in C.S. with an emphasis in software
+innovation from Oregon State University, and about 7 years of professional
+software experience under my belt. I'm passionate about software architecture
+and software evolution in space-based sensor data processing systems, and I look
+forward to the many challenges and opportunities that lie ahead!
 
 My motivation for sharing my important experiences and insights through this
 site can be summarized in the three words of my professional mantra: innovate,
@@ -20,8 +19,8 @@ instruct, and inspire.
 
 I'm passionate about new software and technologies. The industry is fast-paced,
 and keeping up with it can be challenging. I hope to be able to document my
-experiences with new ideas and tech-stacks and ultimately summarize my
-contributions to the novel technologies of the future.
+experiences with new technologies as I encounter them on my journey towards
+(hopefully) contributing to the innovations of the future.
 
 ## Instruct
 
@@ -33,12 +32,12 @@ learn.
 
 ## Inspire
 
-If no one can take anything from my site and use it to improve their skills,
-then there is really no point to me doing this. The greatest achievement I could
-possible make is to be, as Dr. Danny Dig puts it, a "catalyst of change" and
-motivate others to try new things and improve their skills.
+The greatest achievement I could possible make is to be, as Dr. Danny Dig puts
+it, a "catalyst of change" and motivate others to try new things and improve
+their skills. I hope that you will find useful insights and educational
+resources as you explore this site!
 
 ## Here We Go!
 
-I hope you'll tune in occasionally to see what new insights, tutorials, lessons,
-and technologies may be available on this site!
+Thanks for visiting! I hope you'll tune in occasionally to see what new
+insights, tutorials, lessons, and technologies may be available on this site!
