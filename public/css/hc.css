@@ -99,6 +99,17 @@ img.emoji {
   margin: auto;
 }
 
+.post img + em {
+  display: block;
+  text-align: center;
+}
+
+.post .highlighter-rouge + p > em:only-child {
+  display: block;
+  text-align: center;
+  margin-top: -0.75em;
+}
+
 .topic {
   margin-bottom: 4em;
 }
