@@ -19,12 +19,29 @@ layout: default
   </div>
   {% if page.comments %}
   <div class="post-comments">
-    <a href="{{ page.comments }}">
-      <button>
-        Join the post discussion on Discord!
-        <i class="fab fa-discord"></i>
-      </button>
-    </a>
+    <h2>
+      Join the discussion!
+      <i class="fab fa-discord"></i>
+    </h2>
+    <p>
+      Have a question or comment about what you just read?
+    </p>
+    <ol>
+      <li>
+        <a href="https://discord.gg/baHRhh9x3b">
+          Join our community on Discord.
+        </a>
+      </li>
+      <li>
+        <a href="{{ page.comments }}">
+          Add to the thread for this post!
+        </a>
+      </li>
+    </ol>
+    <p>
+      You'll also get access to a network of innovative software engineers who
+      share your interests!
+    </p>
   </div>
   {% endif %}
 </div>
