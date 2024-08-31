@@ -3,6 +3,7 @@ layout: post
 header: default
 title: "Ownership and Software Design"
 author: Braden Hitchcock
+comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279427132900249692
 ---
 
 Clearly communicating the intent of your code is one of the most powerful skills

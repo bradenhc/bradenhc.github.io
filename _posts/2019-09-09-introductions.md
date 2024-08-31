@@ -3,6 +3,7 @@ layout: post
 header: default
 title: Introductions
 author: Braden Hitchcock
+comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279315100238483507
 ---
 
 Welcome! My name is Braden Hitchcock. I'm currently a graduate student at Oregon

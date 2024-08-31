@@ -4,6 +4,7 @@ header: default
 title: "Agile Development: Power in the Principle"
 author: Braden Hitchcock
 tags: [Agile, DevOps, DevSecOps]
+comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279427674585960489
 ---
 
 The word "agile" as applied to the creation and management of software

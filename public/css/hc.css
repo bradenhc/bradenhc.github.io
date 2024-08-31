@@ -105,6 +105,20 @@ img.emoji {
   margin-top: -0.75em;
 }
 
+.post-comments button {
+  border-radius: 5px;
+  background-color: #002e5d;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 0.9em;
+  border: none;
+}
+
+.post-comments button:hover {
+  cursor: pointer;
+}
+
 .topic {
   margin-bottom: 4em;
 }

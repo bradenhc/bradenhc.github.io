@@ -3,6 +3,7 @@ layout: post
 header: default
 title: "Building Better Tools: Implementing the UNIX Philosophy in C/C++"
 author: Braden Hitchcock
+comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279424030348148817
 ---
 
 Engineering is about building things that last. In every engineering discipline,

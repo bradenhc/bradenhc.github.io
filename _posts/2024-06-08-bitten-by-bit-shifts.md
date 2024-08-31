@@ -3,6 +3,7 @@ layout: post
 header: default
 title: "Bitten by Bit Shifts"
 author: Braden Hitchcock
+comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279425530701021245
 ---
 
 I recently found myself decoding some binary data and getting results I wasn't
