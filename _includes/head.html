@@ -40,15 +40,4 @@
   <!-- RSS Feed -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
 
-  {% if site.google_analytics_id and jekyll.environment == "production" %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWTGXZ7X13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.google_analytics_id }}');
-    </script>
-    {% endif %}
 </head>
