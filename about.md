@@ -3,39 +3,37 @@ layout: page
 title: About
 ---
 
-Welcome! 😁 My name is Braden Hitchcock. I'm a software engineer at Northrop
+Welcome! 😁 My name is Braden Hitchcock. I'm a Software Engineer at Northrop
 Grumman in Boulder, Colorado. I have a bachelor's degree in C.S. from Brigham
-Young University, a master's degree in C.S. with an emphasis in software
-innovation from Oregon State University, and about 7 years of professional
-software experience under my belt. I'm passionate about software architecture
-and software evolution in space-based sensor data processing systems, and I look
-forward to the many challenges and opportunities that lie ahead!
+Young University, a master's degree in C.S. from Oregon State University, and
+about 7 years of professional software experience under my belt. I'm passionate
+about mastering software architecture, evolving legacy systems, and sharing what
+I learn with others.
 
-My motivation for sharing my important experiences and insights through this
-site can be summarized in the three words of my professional mantra: innovate,
-instruct, and inspire.
+My goal with this site is to help elevate you so that together we can _innovate_
+new solutions, _instruct_ each other on core principles, and _inspire_ each
+other to become our best selves.
 
 ## Innovate
 
-I'm passionate about new software and technologies. The industry is fast-paced,
-and keeping up with it can be challenging. I hope to be able to document my
-experiences with new technologies as I encounter them on my journey towards
-(hopefully) contributing to the innovations of the future.
+The software industry is fast-paced. Keeping up with it can be challenging. I
+hope to make it easier for all of us to contribute to the innovations of the
+future by capturing core principles of software engineering and documenting my
+experiences with new technologies, standards, and practices.
 
 ## Instruct
 
-My football coach/math teacher in high school (shout out to Coach Johnson!) used
-to say that "you remember 93% of what you teach." By providing overviews of the
-knowledge I gain over the years to come, I hope to not only provide a place for
-others to learn, but also create a process that helps me remember what I will
-learn.
+We constantly digest new information, but do we ever make time to turn around
+and share it with others? I hope to give back as much as I can by summarizing
+the lessons I've learned while discovering principles of well-engineered
+software systems.
 
 ## Inspire
 
-The greatest achievement I could possible make is to be, as Dr. Danny Dig puts
-it, a "catalyst of change" and motivate others to try new things and improve
-their skills. I hope that you will find useful insights and educational
-resources as you explore this site!
+One of the greatest achievements I could make is to be a catalyst of change. My
+goal is to motivate you to try new things and improve your skills. To that end,
+I hope that you will find useful insights and educational resources as you
+explore this site!
 
 ## Here We Go!
 
