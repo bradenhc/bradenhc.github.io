@@ -39,3 +39,6 @@ explore this site!
 
 Thanks for visiting! I hope you'll tune in occasionally to see what new
 insights, tutorials, lessons, and technologies may be available on this site!
+
+<hr/>
+{% include newsletter.html %}

@@ -3,7 +3,6 @@ layout: post
 header: default
 title: "CMake in Two Words"
 author: Braden Hitchcock
-comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279424590078148631
 ---
 
 CMake is a fantastic build system generator. It provides a usable, maintainable,

@@ -9,12 +9,13 @@ title: Home
     <img src="/public/images/profile-black-white.jpg" />
   </div>
   <span class="home-intro">
-    I'm a husband, father, and avid coder specializing in software architecture
-    and evolution on a mission to help you <strong>innovate</strong>,
-    <strong>instruct</strong>, and <strong>inspire</strong>.
+    I'm a husband, father, and avid coder on a mission to help you
+    <strong>innovate</strong>, <strong>instruct</strong>, and
+    <strong>inspire</strong>.
   </span>
+  <hr/>
+  {% include newsletter.html %}
   <div class="home-recent-posts">
-    <h2 class="home-recent-posts-title">Recent Posts</h2>
     {% for post in site.posts limit: 3 %}
     <hr />
     <div class="post">
@@ -33,8 +34,8 @@ title: Home
       </div>
 
       <p class="post-excerpt">
-        {{ post.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' 
-        | strip_html | strip | truncatewords: 50 }}
+        {{ post.excerpt | newline_to_br | strip_newlines | replace: '<br />', '
+        ' | strip_html | strip | truncatewords: 50 }}
       </p>
 
       <a class="post-link" href="{{ post.url}}">Read on...</a>

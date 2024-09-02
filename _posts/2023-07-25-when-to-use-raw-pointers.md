@@ -4,7 +4,6 @@ header: default
 title: "When to Use Raw Pointers"
 author: Braden Hitchcock
 tags: ["C++", "Ownership", "Memory Management", "Maintainability"]
-comments: https://discordapp.com/channels/904059090358140938/904696336933339156/1279425073962553355
 ---
 
 I work a lot with legacy C/C++ code. Much of it is written in a pre-C++11 style,
