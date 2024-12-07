@@ -1,7 +1,7 @@
 ---
 layout: post
 header: default
-title: "Practical C++20 Iterators In-depth"
+title: "C++20 Iterators In-depth"
 author: Braden Hitchcock
 ---
 
@@ -21,19 +21,19 @@ Verbosely put: it abstracts away a set of cursor-like information into a highly
 cohesive object that can be used to traverse a collection and access its
 elements.
 
-The iterator abstraction (in any language) allows us to write algorithms that
-can operate on a collection as long as that collection satisfies certain
-properties. Things like sorting, finding a maximum value, and reducing are
-easier to implement generically when they use iterators.
+The iterator abstraction allows us to write algorithms that can operate on a
+collection as long as that collection satisfies certain properties. Things like
+sorting, finding a maximum value, and reducing are easier to implement
+generically when they use iterators.
 
 ## Traditional C++ Iterators
 
 [Iterators] have been around since before C++11 (what we might call "modern
 C++"), but they really hit mainstream after C++11 came out. While the Standard
 Template Library (STL) containers all implement their own iterators, it is
-possible for developers to create iterators for custom collections.
+possible for developers to create iterators for their own custom collections.
 
-The typical way of doing this in the past was by [tagging].
+In the past you implemented iterators with the help of [tagging].
 
 With tagging, you define some types with specific names for your custom
 iterator, then the STL would perform some compile-time checks to read these
@@ -79,7 +79,7 @@ _concepts_). Thanks to concepts, we can now implement iterators based on their
 _behavior_ rather than their _identity_. This is often referred to as "duck
 typing": if it looks like a duck and quacks like a duck, then it's a duck.
 
-With this new feature you can to use the `concept` keyword to define the
+With this new feature you can use the `concept` keyword to define the
 requirements a template parameter must satisfy.
 
 Fortunately, we don't have to try and define the iterator concepts ourselves.
@@ -260,9 +260,9 @@ only advance the iterator and not return a copy to the previous iterator.
 
 ### Forward Iterators
 
-Output and input iterators are special cases of iterators. They only produce or
-consume values. The majority of the time what we really want to do is visit all
-the elements of a collection.
+Output and input iterators are special cases of iterators. They only produce
+or consume values. The majority of the time what we really want to do is visit
+all the elements of a collection.
 
 This is where the remainder of the standard library iterator concepts come in.
 
@@ -376,6 +376,8 @@ a distance between two iterators.
 Here is an example that builds on top of the `BidirIterator` we saw in the
 previous section.
 
+Strap in...it's a lot to digest!
+
 ```cpp
 template <class T>
 class RandAccIterator {
@@ -445,7 +447,7 @@ RandAccIterator<T> operator+(
 }
 ```
 
-Wow...okay, that was a lot of additional work 😮‍💨
+Whew...that was a lot of additional work 😮‍💨
 
 Random access iterators are more powerful, but as with anything in software that
 is more powerful, it often means more complexity. The code above is the bare
@@ -507,7 +509,7 @@ more natural to developers who are already familiar with iterators.
 
 ## Final Thoughts
 
-You survive the fire hose! 🔥
+Congrats! You survived the fire hose! 🔥
 
 I hope that this summary of modern C++ iterators helps you implement custom
 collections that can take advantage of the many powerful standard library
