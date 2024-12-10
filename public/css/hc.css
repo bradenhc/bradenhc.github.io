@@ -1,5 +1,203 @@
 /* Custom styling for Hitchcock Codes elements */
 
+/* Define the colors to use based on the user's color preference */
+:root {
+  --theme-color: #002E5D;
+
+  --background-color: #FFFFFF;
+  --background-color-code: #F9F9F9;
+  --background-color-sidebar: #202020;
+  --background-color-box: #CCCCCC;
+  --background-color-sidebar-nav-selected: #555555;
+  --background-color-pagination-hover: #F5F5F5;
+
+  --border-color-masthead: #EEEEEE;
+  --border-color-quote: #e5e5e5;
+
+  --font-color-title: #303030;
+  --font-color-masthead: var(--theme-color);
+  --font-color-hero: var(--theme-color);
+  --font-color-heading: #313131;
+  --font-color-body: #515151;
+  --font-color-quote: #7A7A7A;
+  --font-color-link: #268BD2;
+  --font-color-inline-code: var(--theme-color);
+  --font-color-faded: #9A9A9A;
+  --font-color-sidebar: #FFFFFF99;
+  --font-color-sidebar-nav: #FFFFFF;
+  --font-color-related-posts: #999999;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #161616;
+    --background-color-code: #1d1d1d;
+    --background-color-sidebar: #202020;
+    --background-color-box: #333333;
+    --background-color-sidebar-nav-selected: #555555;
+    --background-color-pagination-hover: #0a0a0a;
+
+    --border-color-masthead: #303030;
+    --border-color-quote: #2a2a2a;
+
+    --font-color-title: #d9d9d9;
+    --font-color-masthead: var(--font-color-title);
+    --font-color-hero: var(--font-color-title);
+    --font-color-heading: #d8d8d8;
+    --font-color-body: #c0c0c0;
+    --font-color-quote: #929292;
+    --font-color-link: #268BD2;
+    --font-color-inline-code: #d9d9d9;
+    --font-color-faded: #727272;
+    --font-color-sidebar: #FFFFFF99;
+    --font-color-sidebar-nav: #FFFFFF;
+    --font-color-related-posts: #999999;
+  }
+}
+
+/* Define the base element colors. Many of these overwrite the lanyon and poole
+   theme elements. */
+body {
+  background-color: var(--background-color);
+  color: var(--font-color-body)
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--font-color-heading);
+}
+
+a {
+  color: var(--font-color-link);;
+}
+
+a code {
+  color: var(--font-color-link);
+}
+
+pre {
+  background-color: var(--background-color-code);
+}
+
+pre code {
+  color: var(--font-color-inline-code);
+}
+
+code {
+  background-color: var(--background-color-code);
+  color: var(--font-color-inline-code);
+}
+
+strong {
+  color: var(--font-color-title);
+}
+
+hr {
+  border-top-color: var(--border-color-masthead);
+  border-bottom-color: var(--background-color);
+}
+
+blockquote {
+  color: var(--font-color-quote);
+  border-left-color: var(--border-color-quote);
+}
+
+table {
+  border-color: var(--border-color-quote);
+}
+
+td,
+th {
+  border-color: var(--border-color-quote);
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: var(--background-color-code);
+}
+
+.masthead {
+  border-bottom-color: var(--border-color-masthead);
+}
+
+.masthead-title {
+  color: var(--font-color-masthead);
+}
+
+.masthead-title a {
+  color: var(--font-color-masthead);
+}
+
+.masthead-title small {
+  color: var(--font-color-masthead);
+}
+
+.sidebar {
+  background-color: var(--background-color-sidebar);
+  color: var(--font-color-sidebar);
+}
+
+.sidebar a {
+  color: var(--font-color-sidebar-nav);
+}
+
+.sidebar-toggle {
+  background-color: var(--background-color);
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: var(--font-color-sidebar-nav);
+  color: var(--background-color-sidebar-nav-selected);
+}
+
+.page-title, .post-title, .post-title a {
+  color: var(--font-color-title);
+}
+
+.post-date {
+  color: var(--font-color-faded);
+}
+
+.post-reading-time {
+  color: var(--font-color-faded);
+}
+
+.post-signature {
+  color: var(--font-color-faded);
+}
+
+.related {
+  border-top-color: var(--border-color-masthead);
+}
+
+.related-posts li small {
+  color: var(--font-color-related-posts);
+}
+
+.related-posts li a:hover {
+  color: var(--font-color-link);
+}
+
+.pagination {
+  color: var(--background-color-box);
+}
+
+.pagination-item {
+  border-color: var(--border-color-masthead);
+}
+
+a.pagination-item:hover {
+  background-color: var(--background-color-pagination-hover);
+}
+
+.formkit-input {
+  background-color: var(--background-color) !important;
+  color: var(--font-color-body) !important;
+  border-color: var(--border-color-quote) !important;
+}
+
+/* Define styles specific to the site */
+
 .home {
   display: flex;
   flex-direction: column;
@@ -21,16 +219,20 @@
 }
 
 .hero-shoutout {
-  color: #002e5d;
+  color: var(--font-color-hero);
   text-align: center;
   line-height: 3.1rem;
   margin-top: 0;
 }
 
+.hero-shoutout strong {
+  color: var(--font-color-hero);
+}
+
 @media (min-width: 38em) {
   .hero-shoutout {
     text-align: left;
-    max-width: 13rem;
+    max-width: 11rem;
   }
 }
 
@@ -117,7 +319,7 @@ img.emoji {
 }
 
 .topic-title a {
-  color: #303030;
+  color: var(--font-color-title);
 }
 
 .topic-title {
@@ -127,7 +329,7 @@ img.emoji {
 .topic-subtitle {
   margin-top: -0.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: var(--font-color-faded);
 }
 
 .topic-footer {
@@ -188,7 +390,7 @@ img.emoji {
 
 .resume-position {
   display: block;
-  color: #959595;
+  color: var(--font-color-faded);
   font-size: 1.3rem;
   text-align: center;
 }
@@ -212,7 +414,7 @@ img.emoji {
 
 .resume-section-title {
   text-align: center;
-  background: #ccc;
+  background: var(--background-color-box);
   padding: 0.3rem;
   margin-bottom: 1.2rem;
   border-radius: 0.1rem;
@@ -240,7 +442,7 @@ img.emoji {
 }
 
 .resume-content-icon {
-  color: #959595;
+  color: var(--font-color-faded);
   width: 4rem;
   font-size: 3rem;
 }
@@ -258,7 +460,7 @@ img.emoji {
 }
 
 .resume-link {
-  color: #959595;
+  color: var(--font-color-faded);
   margin: 0 1rem;
 }
 
@@ -272,7 +474,7 @@ img.emoji {
 
 .resume-content-subtitle {
   display: block;
-  color: #9a9a9a;
+  color: var(--font-color-faded);
 }
 
 .resume-content-header-br {
@@ -291,12 +493,12 @@ img.emoji {
 
 .resume-content-dates {
   display: block;
-  color: #9a9a9a;
+  color: var(--font-color-faded);
 }
 
 .resume-content-extra {
   display: block;
-  color: #959595;
+  color: var(--font-color-faded);
 }
 
 .resume-footer {
